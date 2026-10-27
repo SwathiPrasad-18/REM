@@ -1,0 +1,113 @@
+﻿@'
+# Secrets and environment configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+*_credentials*
+*secret*
+*token*
+*api_key*
+*apikey*
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Local application data and logs
+logs/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+REM_Experiments/Self_Learning/data/
+REM_Experiments/Self_Learning/logs/
+
+# Datasets and malware-analysis reports
+REM_Datasets/
+Raw_Reports/
+raw_reports/
+datasets/
+data/raw/
+*.pcap
+*.evtx
+*.dmp
+*.mem
+*.malware
+*.vir
+*.exe
+*.dll
+
+# Trained model artifacts and derived data
+REM_Models/
+*.joblib
+*.keras
+*.h5
+*.pkl
+*.pickle
+*.onnx
+*.pt
+*.pth
+*.safetensors
+
+# Generated experiment outputs
+REM_Experiments/
+!REM_Experiments/Self_Learning/
+REM_Experiments/Self_Learning/data/*
+REM_Experiments/Self_Learning/logs/*
+
+# Build and packaging outputs
+build/
+dist/
+*.spec
+*.egg-info/
+.pytest_cache/
+.coverage
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# REM security: generated data and analysis outputs
+REM_Parser_v5/output/
+REM_Parser_v5/v4_vs_v5_comparison.json
+REM_Tools/parsed/
+REM_Tools/test_extraction.json
+rem_agent_output/
+rem_autolabel_output/
+
+# REM self-learning data and evidence
+REM_Experiments/Self_Learning/data/
+REM_Experiments/Self_Learning/logs/
+**/prediction_queue.csv
+**/verified_feedback.csv
+**/approved_training_feedback.csv
+**/training_exclusions.csv
+**/evidence_registry.csv
+**/*audit*.jsonl
+
+# Local datasets, reports, and archives
+*.csv
+*.jsonl
+*.pcapng
+*.zip
+*.7z
+*.rar
+
+# Additional credential patterns
+.env
+.env.*
+!.env.example
+*credential*
+*private_key*
+*access_token*
+*client_secret*
