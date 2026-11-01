@@ -1,0 +1,15 @@
+{
+  "public_rows_input": 2543,
+  "public_unique_hashes": 2543,
+  "public_rows_after_hash_deduplication": 2543,
+  "public_duplicate_rows": 0,
+  "public_hashes_with_conflicting_labels": 0,
+  "report_rows": 40,
+  "report_rows_matched_to_public_dataset": 39,
+  "report_rows_without_public_label_match": 1,
+  "behavior_event_rows": 450,
+  "behavior_event_hashes_with_features": 25,
+  "source_label_mapping": "preserved numeric values; not mapped to benign/malicious by this script",
+  "VirusTotal_labels": "retained as provisional suggestions only; never treated as ground truth",
+  "model_training": "not performed"
+}

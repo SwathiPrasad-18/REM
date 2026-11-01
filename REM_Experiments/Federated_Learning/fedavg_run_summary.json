@@ -1,0 +1,16 @@
+{
+  "experiment": "REM simulated three-client FedAvg LSTM",
+  "seed": 42,
+  "clients": 3,
+  "rounds": 5,
+  "local_epochs": 1,
+  "batch_size": 32,
+  "training_samples": 1035,
+  "validation_samples": 239,
+  "test_evaluated": false,
+  "threshold": 0.5,
+  "vocabulary_size": 289,
+  "partition_strategy": "deterministic label-stratified sequence groups",
+  "aggregation": "sample-weighted FedAvg",
+  "note": "Simulated federated learning on one machine; clients are not independent organizations. Validation metrics are for development and the test set remains reserved."
+}

@@ -1,0 +1,63 @@
+{
+    "source_file": "2d2ed362b86197998951bfc6779f7d7e326235186c7b4f81dc17555e9a2536c9.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\2d2ed362b86197998951bfc6779f7d7e326235186c7b4f81dc17555e9a2536c9.html",
+    "report_sha256": "f55572cd17958deaa7e29352bde40ff277340be4c33868a943352620dc7ca842",
+    "sample_sha256": "2d2ed362b86197998951bfc6779f7d7e326235186c7b4f81dc17555e9a2536c9",
+    "sample_sha1": null,
+    "sample_md5": "3c228185f12a831614eea3f461764f65",
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [
+        "996E.exe",
+        "patcher.exe",
+        "fpupdateax.exe",
+        "sogouexplorerup.exe",
+        "SogouExplorer.exe"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [
+            "1.0.0.7"
+        ],
+        "domains": [
+            "996E.exe.dump",
+            "patcher.exe",
+            "www.macromedia.com",
+            "fpupdateax.exe",
+            "sogouexplorerup.exe",
+            "SogouExplorer.exe",
+            "DFBF64.tmp",
+            "ownerprotect.ptt",
+            "CTF.LBES.MutexDefaultS",
+            "CTF.Compart.MutexDefaultS",
+            "CTF.Asm.MutexDefaultS",
+            "CTF.Layouts.MutexDefaultS",
+            "CTF.TMD.MutexDefaultS",
+            "CTF.TimListCache.FMPDefaultS",
+            "MUTEX.DefaultS",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "registry"
+    ],
+    "capa_capabilities": [
+        "registry",
+        "file",
+        "create"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.723202"
+}

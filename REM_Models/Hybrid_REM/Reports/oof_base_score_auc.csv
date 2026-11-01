@@ -1,0 +1,4 @@
+feature,roc_auc
+rf_oof_score,0.9665847510457795
+lstm_oof_score,0.9336709341091224
+if_oof_anomaly_score,0.6444530777084105

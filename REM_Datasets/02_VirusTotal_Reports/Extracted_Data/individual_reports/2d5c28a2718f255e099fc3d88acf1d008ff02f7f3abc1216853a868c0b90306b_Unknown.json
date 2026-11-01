@@ -1,0 +1,66 @@
+{
+    "source_file": "2d5c28a2718f255e099fc3d88acf1d008ff02f7f3abc1216853a868c0b90306b.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\2d5c28a2718f255e099fc3d88acf1d008ff02f7f3abc1216853a868c0b90306b.html",
+    "report_sha256": "8838141823dff46b488001d7d769971541dfd45a71c695b7fc683e2300b7049b",
+    "sample_sha256": "2d5c28a2718f255e099fc3d88acf1d008ff02f7f3abc1216853a868c0b90306b",
+    "sample_sha1": null,
+    "sample_md5": "9bac17703876bf90881533beabb9fc9c",
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [
+        "996E.exe",
+        "mssrv.exe",
+        "avi.exe",
+        "zip.exe",
+        "mpeg.exe",
+        "mpg.exe"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "996E.exe.dump",
+            "mssrv.exe",
+            "avi.exe",
+            "com.sogou.share",
+            "zip.exe",
+            "mpeg.exe",
+            "mpg.exe",
+            "CTF.LBES.MutexDefaultS",
+            "CTF.Compart.MutexDefaultS",
+            "CTF.Asm.MutexDefaultS",
+            "CTF.Layouts.MutexDefaultS",
+            "CTF.TMD.MutexDefaultS",
+            "CTF.TimListCache.FMPDefaultS",
+            "MUTEX.DefaultS",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "network",
+        "download",
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "registry",
+        "file",
+        "download",
+        "create"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.742910"
+}

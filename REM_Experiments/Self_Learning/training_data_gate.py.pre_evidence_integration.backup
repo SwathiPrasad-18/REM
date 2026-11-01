@@ -1,0 +1,143 @@
+﻿import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+REPORT_DIR = BASE_DIR / "reports"
+
+FEEDBACK_PATH = DATA_DIR / "verified_feedback.csv"
+EXCLUSIONS_PATH = DATA_DIR / "training_exclusions.csv"
+OUTPUT_PATH = DATA_DIR / "approved_training_feedback.csv"
+REPORT_PATH = REPORT_DIR / "training_gate_report.json"
+
+
+def utc_now():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def main():
+    if not FEEDBACK_PATH.exists():
+        raise FileNotFoundError(f"Missing feedback file: {FEEDBACK_PATH}")
+
+    if not EXCLUSIONS_PATH.exists():
+        raise FileNotFoundError(f"Missing exclusion file: {EXCLUSIONS_PATH}")
+
+    feedback = pd.read_csv(FEEDBACK_PATH, dtype={"sample_id": str})
+    exclusions = pd.read_csv(EXCLUSIONS_PATH, dtype={"sample_id": str})
+
+    required = {
+        "sample_id",
+        "verified_label",
+        "reviewer",
+        "evidence_reference",
+        "review_status",
+        "eligible_for_training",
+    }
+    missing = required - set(feedback.columns)
+    if missing:
+        raise ValueError(f"Feedback file missing columns: {sorted(missing)}")
+
+    if "sample_id" not in exclusions.columns:
+        raise ValueError("Exclusions file must contain sample_id.")
+
+    excluded_ids = set(exclusions["sample_id"].dropna().astype(str))
+    approved = []
+    rejected = []
+
+    seen_ids = set()
+
+    for _, row in feedback.iterrows():
+        sample_id = str(row["sample_id"]).strip()
+        reasons = []
+
+        if not sample_id or sample_id.lower() == "nan":
+            reasons.append("missing_sample_id")
+        elif sample_id in seen_ids:
+            reasons.append("duplicate_sample_id")
+        else:
+            seen_ids.add(sample_id)
+
+        if sample_id in excluded_ids:
+            reasons.append("explicitly_excluded")
+
+        label = pd.to_numeric(
+            pd.Series([row["verified_label"]]), errors="coerce"
+        ).iloc[0]
+        if pd.isna(label) or label not in (0, 1):
+            reasons.append("invalid_verified_label")
+
+        if str(row["review_status"]).strip().lower() != "verified":
+            reasons.append("not_verified")
+
+        eligible = str(row["eligible_for_training"]).strip().lower()
+        if eligible not in {"true", "1", "yes"}:
+            reasons.append("not_training_eligible")
+
+        if not str(row["reviewer"]).strip() or str(row["reviewer"]).lower() == "nan":
+            reasons.append("missing_reviewer")
+
+        evidence = str(row["evidence_reference"]).strip()
+        if (
+            not evidence
+            or evidence.lower() == "nan"
+            or evidence.upper() == "SYNTHETIC-TEST-ONLY"
+        ):
+            reasons.append("missing_or_synthetic_evidence")
+
+        if reasons:
+            rejected.append({
+                "sample_id": sample_id,
+                "rejection_reasons": ";".join(sorted(set(reasons))),
+            })
+        else:
+            approved.append(row.to_dict())
+
+    approved_df = pd.DataFrame(approved, columns=feedback.columns)
+    rejected_df = pd.DataFrame(
+        rejected, columns=["sample_id", "rejection_reasons"]
+    )
+
+    # Never allow an empty approval result to be mistaken for usable training data.
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
+
+    if not approved_df.empty:
+        approved_df.to_csv(OUTPUT_PATH, index=False)
+    elif OUTPUT_PATH.exists():
+        OUTPUT_PATH.unlink()
+
+    rejected_path = REPORT_DIR / "training_gate_rejections.csv"
+    rejected_df.to_csv(rejected_path, index=False)
+
+    report = {
+        "generated_at_utc": utc_now(),
+        "input_feedback_rows": int(len(feedback)),
+        "approved_rows": int(len(approved_df)),
+        "rejected_rows": int(len(rejected_df)),
+        "excluded_sample_ids": sorted(excluded_ids),
+        "approved_output_created": not approved_df.empty,
+        "approved_output_path": str(OUTPUT_PATH) if not approved_df.empty else None,
+        "rejection_report_path": str(rejected_path),
+        "warning": (
+            "Passing this gate does not prove the evidence is genuine or "
+            "the label is correct. Human adjudication and evidence validation "
+            "are still required before production training."
+        ),
+    }
+
+    REPORT_PATH.write_text(json.dumps(report, indent=2), encoding="utf-8")
+
+    print(json.dumps(report, indent=2))
+    if not approved_df.empty:
+        print("\nApproved records:")
+        print(approved_df[["sample_id", "verified_label"]].to_string(index=False))
+    if not rejected_df.empty:
+        print("\nRejected records:")
+        print(rejected_df.to_string(index=False))
+
+
+if __name__ == "__main__":
+    main()

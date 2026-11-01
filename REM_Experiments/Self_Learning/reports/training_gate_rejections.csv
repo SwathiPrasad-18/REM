@@ -1,0 +1,2 @@
+sample_id,rejection_reasons
+REM-SELFTEST-001,evidence_not_registered;explicitly_excluded;missing_or_synthetic_evidence

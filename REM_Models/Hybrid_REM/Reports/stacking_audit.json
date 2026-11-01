@@ -1,0 +1,32 @@
+{
+  "oof_rows": 1035,
+  "fold_counts": {
+    "1": 207,
+    "2": 207,
+    "3": 207,
+    "4": 207,
+    "5": 207
+  },
+  "label_counts": {
+    "0": 733,
+    "1": 302
+  },
+  "matched_rows": 1035,
+  "unique_sequences": 1035,
+  "missing_scores": 0,
+  "base_oof_auc": [
+    {
+      "feature": "rf_oof_score",
+      "roc_auc": 0.9665847510457795
+    },
+    {
+      "feature": "lstm_oof_score",
+      "roc_auc": 0.9336709341091224
+    },
+    {
+      "feature": "if_oof_anomaly_score",
+      "roc_auc": 0.6444530777084105
+    }
+  ],
+  "note": "This script audits score alignment and distributions. It cannot prove fold-level training exclusion without inspecting the OOF generation procedure."
+}

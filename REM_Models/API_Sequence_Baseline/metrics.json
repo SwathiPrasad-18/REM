@@ -1,0 +1,219 @@
+{
+  "status": "success",
+  "dataset": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\04_Unified_Dataset\\processed\\public_labeled_candidate.csv",
+  "rows_used": 2543,
+  "api_sequence_columns": 153,
+  "feature_representation": "ordered API-call tokens with unigram/bigram TF-IDF",
+  "label_mapping": {
+    "0": "benign",
+    "1": "malicious"
+  },
+  "model": "TfidfVectorizer(ngram_range=(1,2)) + RandomForestClassifier",
+  "random_state": 42,
+  "split_sizes": {
+    "train": 1652,
+    "validation": 382,
+    "test": 509
+  },
+  "class_counts": {
+    "0": 1276,
+    "1": 1267
+  },
+  "metrics": [
+    {
+      "split": "train",
+      "rows": 1652,
+      "class_counts": {
+        "0": 829,
+        "1": 823
+      },
+      "accuracy": 0.9812348668280871,
+      "confusion_matrix_labels_0_1": [
+        [
+          825,
+          4
+        ],
+        [
+          27,
+          796
+        ]
+      ],
+      "classification_report": {
+        "benign_0": {
+          "precision": 0.9683098591549296,
+          "recall": 0.9951749095295537,
+          "f1-score": 0.9815585960737656,
+          "support": 829.0
+        },
+        "malicious_1": {
+          "precision": 0.995,
+          "recall": 0.9671931956257594,
+          "f1-score": 0.9808995686999384,
+          "support": 823.0
+        },
+        "accuracy": 0.9812348668280871,
+        "macro avg": {
+          "precision": 0.9816549295774648,
+          "recall": 0.9811840525776565,
+          "f1-score": 0.981229082386852,
+          "support": 1652.0
+        },
+        "weighted avg": {
+          "precision": 0.9816064607986904,
+          "recall": 0.9812348668280871,
+          "f1-score": 0.9812302791677974,
+          "support": 1652.0
+        }
+      },
+      "precision_recall_f1_support": {
+        "0": {
+          "name": "benign",
+          "precision": 0.9683098591549296,
+          "recall": 0.9951749095295537,
+          "f1": 0.9815585960737656,
+          "support": 829
+        },
+        "1": {
+          "name": "malicious",
+          "precision": 0.995,
+          "recall": 0.9671931956257594,
+          "f1": 0.9808995686999384,
+          "support": 823
+        }
+      },
+      "roc_auc": 0.9996687513832562
+    },
+    {
+      "split": "validation",
+      "rows": 382,
+      "class_counts": {
+        "0": 192,
+        "1": 190
+      },
+      "accuracy": 0.9633507853403142,
+      "confusion_matrix_labels_0_1": [
+        [
+          188,
+          4
+        ],
+        [
+          10,
+          180
+        ]
+      ],
+      "classification_report": {
+        "benign_0": {
+          "precision": 0.9494949494949495,
+          "recall": 0.9791666666666666,
+          "f1-score": 0.9641025641025641,
+          "support": 192.0
+        },
+        "malicious_1": {
+          "precision": 0.9782608695652174,
+          "recall": 0.9473684210526315,
+          "f1-score": 0.9625668449197861,
+          "support": 190.0
+        },
+        "accuracy": 0.9633507853403142,
+        "macro avg": {
+          "precision": 0.9638779095300835,
+          "recall": 0.9632675438596491,
+          "f1-score": 0.9633347045111751,
+          "support": 382.0
+        },
+        "weighted avg": {
+          "precision": 0.9638026060744022,
+          "recall": 0.9633507853403142,
+          "f1-score": 0.9633387247184599,
+          "support": 382.0
+        }
+      },
+      "precision_recall_f1_support": {
+        "0": {
+          "name": "benign",
+          "precision": 0.9494949494949495,
+          "recall": 0.9791666666666666,
+          "f1": 0.9641025641025641,
+          "support": 192
+        },
+        "1": {
+          "name": "malicious",
+          "precision": 0.9782608695652174,
+          "recall": 0.9473684210526315,
+          "f1": 0.9625668449197861,
+          "support": 190
+        }
+      },
+      "roc_auc": 0.9918859649122808
+    },
+    {
+      "split": "test",
+      "rows": 509,
+      "class_counts": {
+        "0": 255,
+        "1": 254
+      },
+      "accuracy": 0.962671905697446,
+      "confusion_matrix_labels_0_1": [
+        [
+          251,
+          4
+        ],
+        [
+          15,
+          239
+        ]
+      ],
+      "classification_report": {
+        "benign_0": {
+          "precision": 0.943609022556391,
+          "recall": 0.984313725490196,
+          "f1-score": 0.963531669865643,
+          "support": 255.0
+        },
+        "malicious_1": {
+          "precision": 0.9835390946502057,
+          "recall": 0.9409448818897638,
+          "f1-score": 0.9617706237424547,
+          "support": 254.0
+        },
+        "accuracy": 0.962671905697446,
+        "macro avg": {
+          "precision": 0.9635740586032984,
+          "recall": 0.9626293036899799,
+          "f1-score": 0.9626511468040488,
+          "support": 509.0
+        },
+        "weighted avg": {
+          "precision": 0.9635348345639134,
+          "recall": 0.962671905697446,
+          "f1-score": 0.9626528767118319,
+          "support": 509.0
+        }
+      },
+      "precision_recall_f1_support": {
+        "0": {
+          "name": "benign",
+          "precision": 0.943609022556391,
+          "recall": 0.984313725490196,
+          "f1": 0.963531669865643,
+          "support": 255
+        },
+        "1": {
+          "name": "malicious",
+          "precision": 0.9835390946502057,
+          "recall": 0.9409448818897638,
+          "f1": 0.9617706237424547,
+          "support": 254
+        }
+      },
+      "roc_auc": 0.9918866759302146
+    }
+  ],
+  "cautions": [
+    "This is a baseline, not a production malware detector.",
+    "The split is stratified by label but does not establish cross-dataset generalization.",
+    "Confirm the dataset documentation supports label mapping 0=benign and 1=malicious.",
+    "API-call sequence order is retained in text, with unigram and adjacent-bigram TF-IDF features."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "input": "Raw_Reports.zip",
+  "html_reports_found": 40,
+  "reports_parsed": 40,
+  "parse_errors": 0,
+  "formats": {
+    "CAPE/Cuckoo": 12,
+    "Tencent HABO": 22,
+    "VirusTotal HTML wrapper": 6
+  },
+  "reports_with_sha256": 40,
+  "reports_with_filename": 15,
+  "reports_with_file_size": 15,
+  "reports_with_md5": 15,
+  "reports_with_sha1": 15,
+  "reports_with_analysis_started": 11,
+  "reports_with_analysis_completed": 11,
+  "reports_with_analysis_duration": 11,
+  "reports_with_verdict": 0,
+  "reports_with_behavior_events": 25,
+  "reports_with_network_ips": 20,
+  "reports_with_domains": 22,
+  "reports_with_urls": 14,
+  "reports_with_signatures": 11,
+  "reports_with_mitre": 7,
+  "total_behavior_events": 450,
+  "placeholder_events_removed": 0,
+  "limitations": [
+    "No ground-truth labels assigned.",
+    "Report verdicts are not ground truth.",
+    "Runtime API call sequences are not inferred.",
+    "Network indicators may include benign infrastructure or textual mentions.",
+    "Coverage counts do not prove correctness; spot-check source reports before training."
+  ]
+}

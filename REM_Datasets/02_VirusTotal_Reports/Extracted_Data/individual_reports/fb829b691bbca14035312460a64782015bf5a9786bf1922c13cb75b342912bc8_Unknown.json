@@ -1,0 +1,52 @@
+{
+    "source_file": "fb829b691bbca14035312460a64782015bf5a9786bf1922c13cb75b342912bc8.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\fb829b691bbca14035312460a64782015bf5a9786bf1922c13cb75b342912bc8.html",
+    "report_sha256": "8a2cc8ef16cc55d19e18b68a413187200449d07586f53aa46e0e837258833c14",
+    "sample_sha256": "fb829b691bbca14035312460a64782015bf5a9786bf1922c13cb75b342912bc8",
+    "sample_sha1": null,
+    "sample_md5": "5ff6bdfa29fd702ba142101eaaf763e4",
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [
+        "casino_extensions.exe",
+        "LiveMessageCenter.exe",
+        "Syn012ohp.exe",
+        "Winlog242.exe"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "LiveMessageCenter.exe",
+            "Syn012ohp.exe",
+            "Winlog242.exe",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "network",
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "registry",
+        "file",
+        "create",
+        "delete"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:43.472167"
+}

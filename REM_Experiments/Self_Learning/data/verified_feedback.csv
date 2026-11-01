@@ -1,0 +1,2 @@
+sample_id,verified_label,reviewer,evidence_reference,verified_at_utc,review_status,eligible_for_training,source_model_version,original_prediction,original_confidence
+REM-SELFTEST-001,1,test-reviewer,SYNTHETIC-TEST-ONLY,2026-10-27T10:46:57.950482+00:00,verified,True,self-learning-test,1,0.97

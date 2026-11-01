@@ -1,0 +1,146 @@
+﻿import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+EVIDENCE_DIR = (BASE_DIR / "evidence").resolve()
+REPORT_DIR = BASE_DIR / "reports"
+
+REGISTRY_PATH = DATA_DIR / "evidence_registry.csv"
+EXCLUSIONS_PATH = DATA_DIR / "training_exclusions.csv"
+REPORT_PATH = REPORT_DIR / "evidence_validation_report.json"
+
+REQUIRED_COLUMNS = {
+    "sample_id",
+    "evidence_file",
+    "sha256",
+    "reviewer",
+    "verified_label",
+}
+
+
+def sha256_file(path):
+    digest = hashlib.sha256()
+    with path.open("rb") as file:
+        for chunk in iter(lambda: file.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def utc_now():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def main():
+    if not REGISTRY_PATH.exists():
+        raise FileNotFoundError(f"Registry not found: {REGISTRY_PATH}")
+
+    if not EXCLUSIONS_PATH.exists():
+        raise FileNotFoundError(f"Exclusion list not found: {EXCLUSIONS_PATH}")
+
+    registry = pd.read_csv(REGISTRY_PATH, dtype=str).fillna("")
+    exclusions = pd.read_csv(EXCLUSIONS_PATH, dtype=str).fillna("")
+
+    missing = REQUIRED_COLUMNS - set(registry.columns)
+    if missing:
+        raise ValueError(f"Registry missing columns: {sorted(missing)}")
+
+    if "sample_id" not in exclusions.columns:
+        raise ValueError("Exclusion list must contain sample_id.")
+
+    excluded_ids = set(exclusions["sample_id"].str.strip())
+    results = []
+    seen_ids = set()
+
+    for _, row in registry.iterrows():
+        sample_id = row["sample_id"].strip()
+        evidence_file = row["evidence_file"].strip()
+        expected_hash = row["sha256"].strip().lower()
+        reviewer = row["reviewer"].strip()
+        label_text = row["verified_label"].strip()
+        reasons = []
+
+        if not sample_id:
+            reasons.append("missing_sample_id")
+        elif sample_id in seen_ids:
+            reasons.append("duplicate_sample_id")
+        else:
+            seen_ids.add(sample_id)
+
+        if sample_id in excluded_ids:
+            reasons.append("sample_excluded_from_training")
+
+        if not reviewer:
+            reasons.append("missing_reviewer")
+
+        try:
+            label = int(label_text)
+            if label not in (0, 1):
+                reasons.append("invalid_verified_label")
+        except (TypeError, ValueError):
+            reasons.append("invalid_verified_label")
+
+        if not expected_hash or len(expected_hash) != 64:
+            reasons.append("invalid_sha256_format")
+        elif any(char not in "0123456789abcdef" for char in expected_hash):
+            reasons.append("invalid_sha256_format")
+
+        evidence_path = (EVIDENCE_DIR / evidence_file).resolve()
+
+        # Require evidence to remain inside the designated directory.
+        try:
+            evidence_path.relative_to(EVIDENCE_DIR)
+        except ValueError:
+            reasons.append("evidence_path_outside_evidence_directory")
+
+        actual_hash = ""
+        if not any(
+            reason == "evidence_path_outside_evidence_directory"
+            for reason in reasons
+        ):
+            if not evidence_file:
+                reasons.append("missing_evidence_file")
+            elif not evidence_path.is_file():
+                reasons.append("evidence_file_not_found")
+            else:
+                actual_hash = sha256_file(evidence_path)
+                if actual_hash != expected_hash:
+                    reasons.append("sha256_mismatch")
+
+        results.append({
+            "sample_id": sample_id,
+            "valid": len(reasons) == 0,
+            "reasons": ";".join(sorted(set(reasons))),
+            "reviewer": reviewer,
+            "verified_label": label_text,
+            "evidence_file": evidence_file,
+            "expected_sha256": expected_hash,
+            "actual_sha256": actual_hash,
+        })
+
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
+
+    report = {
+        "generated_at_utc": utc_now(),
+        "registry_rows": len(registry),
+        "valid_records": sum(item["valid"] for item in results),
+        "invalid_records": sum(not item["valid"] for item in results),
+        "results": results,
+        "warning": (
+            "A matching hash confirms file integrity against the registry, "
+            "not evidence authenticity, reviewer identity, or label correctness."
+        ),
+    }
+
+    REPORT_PATH.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    print(json.dumps(report, indent=2))
+    print(f"\nReport saved to: {REPORT_PATH}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,64 @@
+{
+  "evaluation_mode": "smoke_test",
+  "outer_folds": 1,
+  "inner_folds_per_outer_fold": 4,
+  "fixed_threshold": 0.5,
+  "fold_metric_mean_and_std": {
+    "accuracy": {
+      "mean": 0.9227053140096618,
+      "std": 0.0
+    },
+    "roc_auc": {
+      "mean": 0.9682236694363351,
+      "std": 0.0
+    },
+    "average_precision": {
+      "mean": 0.9468218148764684,
+      "std": 0.0
+    },
+    "malware_precision": {
+      "mean": 0.8947368421052632,
+      "std": 0.0
+    },
+    "malware_recall": {
+      "mean": 0.8360655737704918,
+      "std": 0.0
+    },
+    "malware_f1": {
+      "mean": 0.864406779661017,
+      "std": 0.0
+    }
+  },
+  "pooled_out_of_fold_metrics": {
+    "threshold": 0.5,
+    "n_samples": 207,
+    "accuracy": 0.9227053140096618,
+    "roc_auc": 0.9682236694363351,
+    "average_precision": 0.9468218148764684,
+    "malware_precision": 0.8947368421052632,
+    "malware_recall": 0.8360655737704918,
+    "malware_f1": 0.864406779661017,
+    "tn": 140,
+    "fp": 6,
+    "fn": 10,
+    "tp": 51,
+    "confusion_matrix": [
+      [
+        140,
+        6
+      ],
+      [
+        10,
+        51
+      ]
+    ]
+  },
+  "methodology_notes": [
+    "All base-model fitting and meta-classifier training occurred inside each outer training fold.",
+    "The outer held-out fold was not used for model fitting or threshold selection.",
+    "The evaluation pool is the official training split only.",
+    "The official validation and test splits were not included in this nested cross-validation.",
+    "Isolation Forest anomaly scores are inputs to the meta-model; they are not standalone malware probabilities.",
+    "The fixed 0.50 threshold was used for primary outer-fold evaluation."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "source_rows": 2570,
+  "source_columns": 177,
+  "removed_nearly_empty_unnamed_columns": [
+    "Unnamed: 155",
+    "Unnamed: 156",
+    "Unnamed: 157",
+    "Unnamed: 158",
+    "Unnamed: 159",
+    "Unnamed: 160",
+    "Unnamed: 161",
+    "Unnamed: 162",
+    "Unnamed: 163",
+    "Unnamed: 164",
+    "Unnamed: 165",
+    "Unnamed: 166",
+    "Unnamed: 167",
+    "Unnamed: 168",
+    "Unnamed: 169",
+    "Unnamed: 170",
+    "Unnamed: 171",
+    "Unnamed: 172",
+    "Unnamed: 173",
+    "Unnamed: 174",
+    "Unnamed: 175",
+    "Unnamed: 176"
+  ],
+  "rows_after_exact_sha256_deduplication": 2543,
+  "duplicate_rows_removed": 27,
+  "unique_sha256_before_deduplication": 2543,
+  "class_counts_numeric_labels": {
+    "0": 1276,
+    "1": 1267
+  },
+  "duplicate_hashes_with_conflicting_labels": 0,
+  "vt_manifest_rows": 40,
+  "vt_hashes_matched_to_public_dataset": 39,
+  "vt_hashes_not_matched": 1,
+  "warning": "Numeric label meanings (0/1) must be confirmed from the dataset's original documentation before mapping them to benign/malicious. Automated VirusTotal labels remain provisional."
+}

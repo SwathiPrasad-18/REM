@@ -1,0 +1,114 @@
+{
+    "source_file": "e6f15b6133e299a626f17a9d8cc9ab2f369bbe2364c002f2b0170da8327ad34e.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\e6f15b6133e299a626f17a9d8cc9ab2f369bbe2364c002f2b0170da8327ad34e.html",
+    "report_sha256": "c049ebd6065d41f240f88e666ae414e2690950a03db3a480147d579c00696497",
+    "sample_sha256": "e6f15b6133e299a626f17a9d8cc9ab2f369bbe2364c002f2b0170da8327ad34e",
+    "sample_sha1": "43fe9ae006aa344bd0b14ad810af9254ee1453a2",
+    "sample_md5": "629ad3fda168d82d459164044a29f9bb",
+    "filename": "CAPE Sandbox",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [
+        "CAPE"
+    ],
+    "processes": [
+        "software.exe",
+        "TypePerf.exe"
+    ],
+    "commands": [],
+    "registry": [
+        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows",
+        "HKEY_CURRENT_USER\\Console\\Colorize"
+    ],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [
+            "135.232.92.97",
+            "74.178.76.128",
+            "52.140.118.28",
+            "23.221.240.64",
+            "204.79.197.203",
+            "23.11.33.159",
+            "92.223.96.6",
+            "150.171.27.12",
+            "8.8.8.8",
+            "131.107.255.255",
+            "150.171.28.12",
+            "135.232.92.137",
+            "172.16.1.1",
+            "172.16.1.255"
+        ],
+        "domains": [
+            "software.exe",
+            "typeperf.pdb",
+            "TypePerf.exe",
+            "software.exe.mui",
+            "dns.msftncsi.com",
+            "wpad.hostonly",
+            "api.msn.com",
+            "api-msn-com-oneservice-world-default.trafficmanager.net",
+            "ax-0003.ax-msedge.net",
+            "api-msn-com.ax-0003.ax-msedge.net",
+            "ctldl.windowsupdate.com",
+            "wu-b-net.trafficmanager.net",
+            "ctldl.windowsupdate.com.delivery.microsoft.com",
+            "cl-glcb907925.gcdn.co",
+            "ocsp.digicert.com",
+            "cdp1.digicert.com.splitter-eip.akadns.net",
+            "ocsp.edge.digicert.com",
+            "cdp1.digicert.com.eip.akadns.net",
+            "eip-terr-na.cdp1.digicert.com.akahost.net",
+            "cdp1.digicert.com.akamaized.net",
+            "oneocsp.microsoft.com",
+            "oneocsp-microsoft-com.a-0003.a-msedge.net",
+            "a-0003.a-msedge.net",
+            "cdn.onenote.net",
+            "e1553.dspg.akamaiedge.net",
+            "cdn.onenote.net.edgekey.net",
+            "settings-win.data.microsoft.com",
+            "settings-prod-cin-1.centralindia.cloudapp.azure.com",
+            "atm-settingsfe-prod-geo2.trafficmanager.net",
+            "WORKGROUP.hostonly",
+            "slscr.update.microsoft.com",
+            "glb.sls.prod.dcat.dsp.trafficmanager.net",
+            "sls.update.microsoft.com",
+            "fe3cr.delivery.mp.microsoft.com",
+            "fe3.delivery.mp.microsoft.com",
+            "glb.cws.prod.dcat.dsp.trafficmanager.net",
+            "disallowedcertstl.cab"
+        ],
+        "urls": [
+            "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?51ff581e2335e961",
+            "http://ocsp.digicert.com/MFEwTzBNMEswSTAJBgUrDgMCGgUABBQ50otx%2Fh0Ztl%2Bz8SiPI7wEWVxDlQQUTiJUIBiV5uNu5g%2F6%2BrkS7QYXjzkCEAsMayxGaRewR3PGR9SvwMg%3D",
+            "http://oneocsp.microsoft.com/ocsp/MFQwUjBQME4wTDAJBgUrDgMCGgUABBR0TBEVYklX7A9yLoLD9hqmCWDxFgQU3pGGSLehMVkx8UtfB6nciHnaqHYCEzMAAAAPMyBlN%2B5Crk8AAAAAAA8%3D",
+            "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?fe1aa5878238c7c4"
+        ]
+    },
+    "mitre_techniques": [
+        "T1071"
+    ],
+    "behavior_tags": [
+        "network",
+        "download",
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "registry",
+        "file",
+        "execute",
+        "command",
+        "download",
+        "create",
+        "delete"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:43.365030"
+}

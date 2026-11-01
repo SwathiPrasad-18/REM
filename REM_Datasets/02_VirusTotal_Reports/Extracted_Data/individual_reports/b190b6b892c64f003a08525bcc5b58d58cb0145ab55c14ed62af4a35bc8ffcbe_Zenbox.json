@@ -1,0 +1,55 @@
+{
+    "source_file": "b190b6b892c64f003a08525bcc5b58d58cb0145ab55c14ed62af4a35bc8ffcbe.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\b190b6b892c64f003a08525bcc5b58d58cb0145ab55c14ed62af4a35bc8ffcbe.html",
+    "report_sha256": "d8f5201e97bb8e3212c2af5ff222caf9097df85ee8a1694117482a1a0f15bb5b",
+    "sample_sha256": "b190b6b892c64f003a08525bcc5b58d58cb0145ab55c14ed62af4a35bc8ffcbe",
+    "sample_sha1": "20c1a28eb728b5dcdad51b0ff7b78dc762c30630",
+    "sample_md5": "e4090fa0f2368bf1e2fd850de51b9267",
+    "filename": "executable.exe",
+    "file_type": "PE32 executable (console) Intel 80386 (stripped to external PDB), for MS Windows",
+    "file_size": "90.0 KB",
+    "sandboxes": [
+        "Zenbox"
+    ],
+    "processes": [
+        "executable.exe",
+        "conhost.exe"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": [
+            "dropped\\s+files?"
+        ]
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "executable.exe",
+            "conhost.exe"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [
+        "T1055",
+        "T1027.002",
+        "T1027",
+        "T1082"
+    ],
+    "behavior_tags": [
+        "idle",
+        "evasion"
+    ],
+    "capa_capabilities": [
+        "process",
+        "file",
+        "inject",
+        "create"
+    ],
+    "verdict": "1 /100 Non Malicious",
+    "extraction_timestamp": "2026-09-30T16:07:42.993048"
+}

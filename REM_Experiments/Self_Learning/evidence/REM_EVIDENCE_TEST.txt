@@ -1,0 +1,2 @@
+﻿REM evidence integrity test only
+Modified to test hash mismatch detection

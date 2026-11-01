@@ -1,0 +1,2 @@
+"sample_id","verified_label","reviewer","evidence_reference","review_status","eligible_for_training"
+"REM-ISOLATED-TEST-001","1","isolated-test-reviewer","ISOLATED-SYNTHETIC-TEST","verified","true"

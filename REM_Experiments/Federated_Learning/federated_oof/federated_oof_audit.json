@@ -1,0 +1,127 @@
+{
+  "experiment": "Five-fold simulated federated LSTM OOF",
+  "seed": 42,
+  "clients": 3,
+  "folds": 5,
+  "rounds_per_fold": 17,
+  "local_epochs": 1,
+  "batch_size": 32,
+  "training_samples": 1035,
+  "oof_rows": 1035,
+  "source_oof_audit": {
+    "rows_rf_if": 1035,
+    "rows_central_lstm": 1035,
+    "duplicate_keys_rf_if": 0,
+    "duplicate_keys_central_lstm": 0,
+    "all_keys_matched": true,
+    "fold_assignments_match": true,
+    "samples_per_fold": {
+      "1": 207,
+      "2": 207,
+      "3": 207,
+      "4": 207,
+      "5": 207
+    }
+  },
+  "folds_match_existing_oof": true,
+  "fold_assignments_match": true,
+  "fold_specific_vocabulary": true,
+  "heldout_used_for_training": false,
+  "test_evaluated": false,
+  "roc_auc_oof": 0.9475258169727963,
+  "average_precision_oof": 0.9179829953548737,
+  "fold_details": [
+    {
+      "fold": 1,
+      "train_samples": 828,
+      "heldout_samples": 207,
+      "client_samples": [
+        277,
+        276,
+        275
+      ],
+      "vocabulary_size": 287,
+      "rounds": 17,
+      "local_epochs": 1,
+      "heldout_used_for_training": false,
+      "sequence_overlap": false,
+      "elapsed_seconds": 82.93,
+      "model_path": "REM_Experiments\\Federated_Learning\\federated_oof\\artifacts\\fedavg_lstm_fold_1.keras",
+      "vocabulary_path": "REM_Experiments\\Federated_Learning\\federated_oof\\artifacts\\vocabulary_fold_1.json"
+    },
+    {
+      "fold": 2,
+      "train_samples": 828,
+      "heldout_samples": 207,
+      "client_samples": [
+        277,
+        276,
+        275
+      ],
+      "vocabulary_size": 286,
+      "rounds": 17,
+      "local_epochs": 1,
+      "heldout_used_for_training": false,
+      "sequence_overlap": false,
+      "elapsed_seconds": 82.95,
+      "model_path": "REM_Experiments\\Federated_Learning\\federated_oof\\artifacts\\fedavg_lstm_fold_2.keras",
+      "vocabulary_path": "REM_Experiments\\Federated_Learning\\federated_oof\\artifacts\\vocabulary_fold_2.json"
+    },
+    {
+      "fold": 3,
+      "train_samples": 828,
+      "heldout_samples": 207,
+      "client_samples": [
+        277,
+        276,
+        275
+      ],
+      "vocabulary_size": 283,
+      "rounds": 17,
+      "local_epochs": 1,
+      "heldout_used_for_training": false,
+      "sequence_overlap": false,
+      "elapsed_seconds": 82.06,
+      "model_path": "REM_Experiments\\Federated_Learning\\federated_oof\\artifacts\\fedavg_lstm_fold_3.keras",
+      "vocabulary_path": "REM_Experiments\\Federated_Learning\\federated_oof\\artifacts\\vocabulary_fold_3.json"
+    },
+    {
+      "fold": 4,
+      "train_samples": 828,
+      "heldout_samples": 207,
+      "client_samples": [
+        277,
+        276,
+        275
+      ],
+      "vocabulary_size": 287,
+      "rounds": 17,
+      "local_epochs": 1,
+      "heldout_used_for_training": false,
+      "sequence_overlap": false,
+      "elapsed_seconds": 82.25,
+      "model_path": "REM_Experiments\\Federated_Learning\\federated_oof\\artifacts\\fedavg_lstm_fold_4.keras",
+      "vocabulary_path": "REM_Experiments\\Federated_Learning\\federated_oof\\artifacts\\vocabulary_fold_4.json"
+    },
+    {
+      "fold": 5,
+      "train_samples": 828,
+      "heldout_samples": 207,
+      "client_samples": [
+        277,
+        276,
+        275
+      ],
+      "vocabulary_size": 287,
+      "rounds": 17,
+      "local_epochs": 1,
+      "heldout_used_for_training": false,
+      "sequence_overlap": false,
+      "elapsed_seconds": 82.77,
+      "model_path": "REM_Experiments\\Federated_Learning\\federated_oof\\artifacts\\fedavg_lstm_fold_5.keras",
+      "vocabulary_path": "REM_Experiments\\Federated_Learning\\federated_oof\\artifacts\\vocabulary_fold_5.json"
+    }
+  ],
+  "output_csv": "REM_Experiments\\Federated_Learning\\federated_oof\\federated_lstm_oof.csv",
+  "note": "Simulated federated learning on one machine. OOF models use fold-specific vocabularies and train only on four folds. Their score distribution may differ from a full-training model. These OOF metrics are development diagnostics, not a substitute for final reserved-test evaluation."
+}

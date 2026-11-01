@@ -1,0 +1,72 @@
+{
+    "source_file": "5a9a5ae741322bfea383c1384d616e466c435a24c44e3322a774b93fbbe70d39.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\5a9a5ae741322bfea383c1384d616e466c435a24c44e3322a774b93fbbe70d39.html",
+    "report_sha256": "b0a41f5b01ab6c40e0fa3a68b71ab338c910ee70354848c7cecc72036390c589",
+    "sample_sha256": "5a9a5ae741322bfea383c1384d616e466c435a24c44e3322a774b93fbbe70d39",
+    "sample_sha1": "f8489fb7ae7ed9386d9edbd429f5edba3a2e9916",
+    "sample_md5": "5ff8fa550091738061e9840f8b7d53da",
+    "filename": "RTMPDumpHelper.exe",
+    "file_type": "PE32+ executable (GUI) x86-64, for MS Windows",
+    "file_size": "107.0 KB",
+    "sandboxes": [
+        "Zenbox"
+    ],
+    "processes": [
+        "RTMPDumpHelper.exe"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [
+            "192.229.221.95",
+            "192.168.2.1"
+        ],
+        "domains": [
+            "RTMPDumpHelper.exe",
+            "www.oracle.com",
+            "00000001.00000002.1279093248.000000000044C000.00000004.00000020.00020000.00000000.sdmp",
+            "www.nirsoft.net",
+            "00000001.00000002.1278952131.0000000000148000.00000004.00000010.00020000.00000000.sdmp",
+            "fp2e7a.wpc.phicdn.net",
+            "tse1.mm.bing.net"
+        ],
+        "urls": [
+            "https://www.oracle.com/technetwork/java/javase/downloads",
+            "http://www.nirsoft.net",
+            "http://www.nirsoft.net/"
+        ]
+    },
+    "mitre_techniques": [
+        "T1574.002",
+        "T1057",
+        "T1010",
+        "T1083",
+        "T1082",
+        "T1095",
+        "T1071"
+    ],
+    "behavior_tags": [
+        "evasion",
+        "persistence",
+        "network",
+        "download"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "file",
+        "memory",
+        "command",
+        "persistence",
+        "download"
+    ],
+    "verdict": "0 /100 Non Malicious",
+    "extraction_timestamp": "2026-09-30T16:07:42.781738"
+}

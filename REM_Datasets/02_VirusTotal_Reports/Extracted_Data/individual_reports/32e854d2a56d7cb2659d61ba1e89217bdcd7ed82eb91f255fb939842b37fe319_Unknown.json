@@ -1,0 +1,52 @@
+{
+    "source_file": "32e854d2a56d7cb2659d61ba1e89217bdcd7ed82eb91f255fb939842b37fe319.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\32e854d2a56d7cb2659d61ba1e89217bdcd7ed82eb91f255fb939842b37fe319.html",
+    "report_sha256": "2a860fe526dfe853b7cad73d6c65e00876e4195b3439ba1e0f9d61f5f6014427",
+    "sample_sha256": "32e854d2a56d7cb2659d61ba1e89217bdcd7ed82eb91f255fb939842b37fe319",
+    "sample_sha1": null,
+    "sample_md5": null,
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [
+            "1.4.1.0"
+        ],
+        "domains": [
+            "996E.cfg",
+            "CTF.ThreadMIConnectionEvent",
+            "CTF.ThreadMarshalInterfaceEvent",
+            "MSCTF.SendReceiveConection.Event.EBH.IC",
+            "MSCTF.SendReceive.Event.EBH.IC",
+            "CTF.LBES.MutexDefaultS",
+            "CTF.Compart.MutexDefaultS",
+            "CTF.Asm.MutexDefaultS",
+            "CTF.Layouts.MutexDefaultS",
+            "CTF.TMD.MutexDefaultS",
+            "CTF.TimListCache.FMPDefaultS",
+            "MUTEX.DefaultS",
+            "MSCTF.Shared.MUTEX.EBH",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [],
+    "capa_capabilities": [
+        "file",
+        "create"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.749025"
+}

@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "clients": 3,
+  "partition_strategy": "deterministic label-stratified sequence groups",
+  "training_samples": 1035,
+  "unique_sequence_hashes": 1035,
+  "validation_test_included": false,
+  "model_training_performed": false
+}

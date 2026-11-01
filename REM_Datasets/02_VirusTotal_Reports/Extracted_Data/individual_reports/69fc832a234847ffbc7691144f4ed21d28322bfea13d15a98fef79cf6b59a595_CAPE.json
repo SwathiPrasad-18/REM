@@ -1,0 +1,111 @@
+{
+    "source_file": "69fc832a234847ffbc7691144f4ed21d28322bfea13d15a98fef79cf6b59a595.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\69fc832a234847ffbc7691144f4ed21d28322bfea13d15a98fef79cf6b59a595.html",
+    "report_sha256": "1eab2a21df2275bbf31f114c72ab64351734ae04933b26216587d76342c13a4a",
+    "sample_sha256": "69fc832a234847ffbc7691144f4ed21d28322bfea13d15a98fef79cf6b59a595",
+    "sample_sha1": "d814ace2076db2e76d4c539bd6920d1aa0ce497f",
+    "sample_md5": "fb24438f64baf5198ee7648b51fd3ab0",
+    "filename": "CAPE Sandbox",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [
+        "CAPE"
+    ],
+    "processes": [
+        "program.exe",
+        "KERNELBASE.dll"
+    ],
+    "commands": [],
+    "registry": [
+        "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\StateSeparation\\RedirectionMap\\Keys",
+        "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\LanguageOverlay\\OverlayPackages\\en-US"
+    ],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [
+            "deleted\\s+files?"
+        ],
+        "created": [],
+        "dropped": [
+            "dropped\\s+files?"
+        ]
+    },
+    "network": {
+        "ip_addresses": [
+            "20.59.87.226",
+            "23.198.74.242",
+            "199.232.210.172",
+            "40.126.27.66",
+            "23.45.1.85",
+            "204.79.197.203",
+            "8.8.8.8",
+            "131.107.255.255",
+            "20.190.155.2",
+            "20.190.155.132",
+            "20.190.155.67",
+            "20.190.155.65",
+            "20.190.155.16",
+            "20.190.155.130",
+            "20.190.155.131",
+            "199.232.214.172",
+            "172.16.1.1",
+            "172.16.1.255"
+        ],
+        "domains": [
+            "program.exe",
+            "dns.msftncsi.com",
+            "wpad.hostonly",
+            "cdn.onenote.net",
+            "e1553.dspg.akamaiedge.net",
+            "cdn.onenote.net.edgekey.net",
+            "api.msn.com",
+            "api-msn-com-oneservice-world-default.trafficmanager.net",
+            "api-msn-com.a-0003.a-msedge.net",
+            "a-0003.a-msedge.net",
+            "login.live.com",
+            "prdv4a.aadg.msidentity.com",
+            "www.tm.v4.a.prd.aadg.akadns.net",
+            "login.msa.msidentity.com",
+            "www.tm.lg.prod.aadmsa.akadns.net",
+            "ctldl.windowsupdate.com",
+            "ctldl.windowsupdate.com.delivery.microsoft.com",
+            "bg.microsoft.map.fastly.net",
+            "wu-b-net.trafficmanager.net",
+            "ocsp.digicert.com",
+            "ocsp.edge.digicert.com",
+            "e3913.cd.akamaiedge.net",
+            "cac-ocsp.digicert.com.edgekey.net",
+            "client.wns.windows.com",
+            "wns.notify.trafficmanager.net",
+            "WORKGROUP.hostonly",
+            "disallowedcertstl.cab",
+            "KERNELBASE.dll.mui"
+        ],
+        "urls": [
+            "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?d568006026dafeb7",
+            "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?4deadc827ecdc1a6",
+            "http://ocsp.digicert.com/MFEwTzBNMEswSTAJBgUrDgMCGgUABBSAUQYBMq2awn1Rh6Doh%2FsBYgFV7gQUA95QNVbRTLtm8KPiGxvDl7I90VUCEAJ0LqoXyo4hxxe7H%2Fz9DKA%3D",
+            "http://ocsp.digicert.com/MFEwTzBNMEswSTAJBgUrDgMCGgUABBQ50otx%2Fh0Ztl%2Bz8SiPI7wEWVxDlQQUTiJUIBiV5uNu5g%2F6%2BrkS7QYXjzkCEApDqVCbATUviZV57HIIulA%3D"
+        ]
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "network",
+        "download",
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "registry",
+        "file",
+        "execute",
+        "command",
+        "download",
+        "create",
+        "delete"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.794346"
+}

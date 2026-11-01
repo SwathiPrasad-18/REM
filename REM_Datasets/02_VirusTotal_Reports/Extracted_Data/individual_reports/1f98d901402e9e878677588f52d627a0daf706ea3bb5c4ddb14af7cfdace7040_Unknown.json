@@ -1,0 +1,75 @@
+{
+    "source_file": "1f98d901402e9e878677588f52d627a0daf706ea3bb5c4ddb14af7cfdace7040.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\1f98d901402e9e878677588f52d627a0daf706ea3bb5c4ddb14af7cfdace7040.html",
+    "report_sha256": "7f5d8cf0407754393cb9eceaf1e68d5e557ee87e7c6c861819099a7a90422f9e",
+    "sample_sha256": "1f98d901402e9e878677588f52d627a0daf706ea3bb5c4ddb14af7cfdace7040",
+    "sample_sha1": null,
+    "sample_md5": "b2d0c69c40c659d82053ed2cc1892976",
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [
+        "IEXPLORE.EXE",
+        "Kfigfhfk.exe",
+        "Glockd32.dll"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "IEXPLORE.EXE",
+            "Kfigfhfk.exe",
+            "ofaeolbh.htm",
+            "pmpggefo.htm",
+            "mppanjof.htm",
+            "ojcngfbb.htm",
+            "daofmelh.htm",
+            "dcdplghi.htm",
+            "pmcioacp.htm",
+            "chbemnin.htm",
+            "cbneffkb.htm",
+            "hddblpmc.htm",
+            "mhhfdgqm.htm",
+            "gaipndoj.htm",
+            "qlfbghoj.htm",
+            "kfdlehgm.htm",
+            "lafindki.htm",
+            "Glockd32.dll",
+            "surf.dat",
+            "phfkkjoq.htm",
+            "dmjbodmh.htm",
+            "CTF.LBES.MutexDefaultS",
+            "CTF.Compart.MutexDefaultS",
+            "CTF.Asm.MutexDefaultS",
+            "CTF.Layouts.MutexDefaultS",
+            "CTF.TMD.MutexDefaultS",
+            "CTF.TimListCache.FMPDefaultS",
+            "MUTEX.DefaultS",
+            "MSFT.VSA.COM.DISABLE",
+            "MSFT.VSA.IEC.STATUS",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "registry",
+        "file",
+        "create"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.657310"
+}

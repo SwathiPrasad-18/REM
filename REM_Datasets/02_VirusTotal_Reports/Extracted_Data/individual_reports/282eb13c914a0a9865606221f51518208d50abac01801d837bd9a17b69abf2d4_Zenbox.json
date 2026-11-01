@@ -1,0 +1,48 @@
+{
+    "source_file": "282eb13c914a0a9865606221f51518208d50abac01801d837bd9a17b69abf2d4.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\282eb13c914a0a9865606221f51518208d50abac01801d837bd9a17b69abf2d4.html",
+    "report_sha256": "fcfea6b41b63596cfc00239867ea6e675d3f449659eb81b4b7b62817663f9c01",
+    "sample_sha256": "282eb13c914a0a9865606221f51518208d50abac01801d837bd9a17b69abf2d4",
+    "sample_sha1": "ee2c45362d2bb5f5f5994e4a2b04be4a497c4527",
+    "sample_md5": "1574bd8fe91100977cd5973ee1174b1c",
+    "filename": "rstrui.exe",
+    "file_type": "PE32+ executable (GUI) x86-64, for MS Windows",
+    "file_size": "290.0 KB",
+    "sandboxes": [
+        "Zenbox"
+    ],
+    "processes": [
+        "rstrui.exe"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "rstrui.exe",
+            "D.CZ",
+            "D.RichJ"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [
+        "T1082"
+    ],
+    "behavior_tags": [
+        "idle",
+        "evasion"
+    ],
+    "capa_capabilities": [
+        "process",
+        "file"
+    ],
+    "verdict": "0 /100 Non Malicious",
+    "extraction_timestamp": "2026-09-30T16:07:42.675103"
+}

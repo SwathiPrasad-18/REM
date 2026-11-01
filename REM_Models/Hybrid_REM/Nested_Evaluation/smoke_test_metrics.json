@@ -1,0 +1,23 @@
+{
+  "mode": "one_outer_fold_smoke_test",
+  "outer_train_samples": 828,
+  "outer_held_out_samples": 207,
+  "inner_folds": 4,
+  "threshold": 0.5,
+  "accuracy": 0.927536231884058,
+  "roc_auc": 0.9696833595328991,
+  "malware_precision": 0.9107142857142857,
+  "malware_recall": 0.8360655737704918,
+  "malware_f1": 0.8717948717948718,
+  "confusion_matrix_labels_0_1": [
+    [
+      141,
+      5
+    ],
+    [
+      10,
+      51
+    ]
+  ],
+  "warning": "Smoke test only. Do not report as final performance. The full evaluation must aggregate all outer folds."
+}

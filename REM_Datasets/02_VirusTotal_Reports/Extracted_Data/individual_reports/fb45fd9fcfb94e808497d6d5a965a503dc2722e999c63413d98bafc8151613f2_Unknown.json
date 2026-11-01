@@ -1,0 +1,41 @@
+{
+    "source_file": "fb45fd9fcfb94e808497d6d5a965a503dc2722e999c63413d98bafc8151613f2.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\fb45fd9fcfb94e808497d6d5a965a503dc2722e999c63413d98bafc8151613f2.html",
+    "report_sha256": "18f4b922576c14b130090e3cc8fa964b70cf1e262644c77a82ede33d04b705fe",
+    "sample_sha256": "fb45fd9fcfb94e808497d6d5a965a503dc2722e999c63413d98bafc8151613f2",
+    "sample_sha1": null,
+    "sample_md5": null,
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "registry"
+    ],
+    "capa_capabilities": [
+        "registry",
+        "file",
+        "create",
+        "delete"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:43.455735"
+}

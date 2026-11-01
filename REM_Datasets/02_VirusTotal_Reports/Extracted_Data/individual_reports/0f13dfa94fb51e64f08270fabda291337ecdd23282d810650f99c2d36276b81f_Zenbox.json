@@ -1,0 +1,56 @@
+{
+    "source_file": "0f13dfa94fb51e64f08270fabda291337ecdd23282d810650f99c2d36276b81f.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\0f13dfa94fb51e64f08270fabda291337ecdd23282d810650f99c2d36276b81f.html",
+    "report_sha256": "7ec04d37b3f46dd58c48060d8a3ed35cfb99e97da4e5ff337401feb7ed5a35fc",
+    "sample_sha256": "0f13dfa94fb51e64f08270fabda291337ecdd23282d810650f99c2d36276b81f",
+    "sample_sha1": "93f7ba2adcc6212da443c1ee0eae035411cb4ce2",
+    "sample_md5": "ef760c4bf254b378c6ff60293b505130",
+    "filename": "executable.exe",
+    "file_type": "PE32 executable (GUI) Intel 80386, for MS Windows",
+    "file_size": "167.54 KB",
+    "sandboxes": [
+        "Zenbox"
+    ],
+    "processes": [
+        "executable.exe"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [
+            "192.229.211.108"
+        ],
+        "domains": [
+            "executable.exe",
+            "fp2e7a.wpc.phicdn.net"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [
+        "T1574.002",
+        "T1056",
+        "T1082"
+    ],
+    "behavior_tags": [
+        "idle",
+        "evasion",
+        "persistence",
+        "network"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "file",
+        "persistence",
+        "create"
+    ],
+    "verdict": "1 /100 Non Malicious",
+    "extraction_timestamp": "2026-09-30T16:07:42.558836"
+}

@@ -1,0 +1,132 @@
+{
+    "source_file": "3b2f41efda68c82d9d50af329ac9b403c806cbe74f87917cdb350e542adda017.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\3b2f41efda68c82d9d50af329ac9b403c806cbe74f87917cdb350e542adda017.html",
+    "report_sha256": "29e0b8ce6c8fa7855363e5c88754a07ee6195ee720d292028bdfde85928c9964",
+    "sample_sha256": "3b2f41efda68c82d9d50af329ac9b403c806cbe74f87917cdb350e542adda017",
+    "sample_sha1": "6fee2b562f597c7801c21d863607d9bcbb2a8b09",
+    "sample_md5": "521202aa6f2b74fccc6bc7e162109d71",
+    "filename": "CAPE Sandbox",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [
+        "CAPE"
+    ],
+    "processes": [
+        "file.exe"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [
+            "deleted\\s+files?"
+        ],
+        "created": [],
+        "dropped": [
+            "dropped\\s+files?"
+        ]
+    },
+    "network": {
+        "ip_addresses": [
+            "52.165.164.15",
+            "40.78.107.251",
+            "40.68.123.157",
+            "192.229.211.108",
+            "204.79.197.203",
+            "40.126.28.22",
+            "23.9.131.101",
+            "23.220.189.216",
+            "199.232.210.172",
+            "23.0.175.139",
+            "52.167.17.97",
+            "13.107.246.41",
+            "23.0.175.195",
+            "199.232.214.172",
+            "40.126.28.14",
+            "40.126.28.21",
+            "40.126.28.19",
+            "40.126.28.13",
+            "40.126.28.11",
+            "40.126.28.18",
+            "40.126.28.20",
+            "40.78.107.252",
+            "172.16.1.1",
+            "172.16.1.255"
+        ],
+        "domains": [
+            "file.exe",
+            "slscr.update.microsoft.com",
+            "glb.sls.prod.dcat.dsp.trafficmanager.net",
+            "sls.update.microsoft.com",
+            "settings-win.data.microsoft.com",
+            "settings-prod-eus2-2.eastus2.cloudapp.azure.com",
+            "atm-settingsfe-prod-geo2.trafficmanager.net",
+            "maps.windows.com",
+            "s-part-0013.t-0009.t-msedge.net",
+            "azureedge-t-prod.trafficmanager.net",
+            "maps-win-com-cdn.afd.azureedge.net",
+            "maps-win-com-cdn.azureedge.net",
+            "shed.dual-low.s-part-0013.t-0009.t-msedge.net",
+            "WORKGROUP.hostonly",
+            "www.msftconnecttest.com",
+            "www.msftncsi.com.edgesuite.net",
+            "ncsi-geo.trafficmanager.net",
+            "a1961.g2.akamai.net",
+            "ctldl.windowsupdate.com",
+            "ctldl.windowsupdate.com.delivery.microsoft.com",
+            "wu-b-net.trafficmanager.net",
+            "bg.microsoft.map.fastly.net",
+            "wpad.hostonly",
+            "fs.microsoft.com",
+            "prod.fs.microsoft.com.akadns.net",
+            "e16604.g.akamaiedge.net",
+            "fs-wildcard.microsoft.com.edgekey.net",
+            "fs-wildcard.microsoft.com.edgekey.net.globalredir.akadns.net",
+            "cdn.onenote.net",
+            "cdn.onenote.net.edgekey.net",
+            "e1553.dspg.akamaiedge.net",
+            "login.live.com",
+            "www.tm.v4.a.prd.aadg.akadns.net",
+            "login.msa.msidentity.com",
+            "prdv4a.aadg.msidentity.com",
+            "www.tm.lg.prod.aadmsa.trafficmanager.net",
+            "ocsp.digicert.com",
+            "ocsp.edge.digicert.com",
+            "fp2e7a.wpc.phicdn.net",
+            "fp2e7a.wpc.2be4.phicdn.net",
+            "fe2cr.update.microsoft.com",
+            "fe2cr.update.msft.com.trafficmanager.net",
+            "fe3cr.delivery.mp.microsoft.com",
+            "glb.cws.prod.dcat.dsp.trafficmanager.net",
+            "fe3.delivery.mp.microsoft.com",
+            "connecttest.txt",
+            "disallowedcertstl.cab"
+        ],
+        "urls": [
+            "http://www.msftconnecttest.com/connecttest.txt",
+            "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?7fccaa5ebe7239ea",
+            "http://ocsp.digicert.com/MFEwTzBNMEswSTAJBgUrDgMCGgUABBSAUQYBMq2awn1Rh6Doh%2FsBYgFV7gQUA95QNVbRTLtm8KPiGxvDl7I90VUCEAJ0LqoXyo4hxxe7H%2Fz9DKA%3D",
+            "http://ocsp.digicert.com/MFEwTzBNMEswSTAJBgUrDgMCGgUABBQ50otx%2Fh0Ztl%2Bz8SiPI7wEWVxDlQQUTiJUIBiV5uNu5g%2F6%2BrkS7QYXjzkCEA77flR%2B3w%2FxBpruV2lte6A%3D"
+        ]
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "network",
+        "download",
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "registry",
+        "file",
+        "execute",
+        "command",
+        "download",
+        "create",
+        "delete"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.763654"
+}

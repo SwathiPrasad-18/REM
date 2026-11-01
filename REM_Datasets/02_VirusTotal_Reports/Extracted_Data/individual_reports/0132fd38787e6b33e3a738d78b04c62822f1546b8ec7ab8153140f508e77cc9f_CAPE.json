@@ -1,0 +1,112 @@
+{
+    "source_file": "0132fd38787e6b33e3a738d78b04c62822f1546b8ec7ab8153140f508e77cc9f.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\0132fd38787e6b33e3a738d78b04c62822f1546b8ec7ab8153140f508e77cc9f.html",
+    "report_sha256": "c97958a8433d092f219ce306b5ef10d1687949e178dedb8ab272e482ceaa1b48",
+    "sample_sha256": null,
+    "sample_sha1": null,
+    "sample_md5": null,
+    "filename": "CAPE Sandbox",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [
+        "CAPE"
+    ],
+    "processes": [
+        "UNLODCTR.EXE"
+    ],
+    "commands": [],
+    "registry": [
+        "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows"
+    ],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [
+            "deleted\\s+files?"
+        ],
+        "created": [],
+        "dropped": [
+            "dropped\\s+files?"
+        ]
+    },
+    "network": {
+        "ip_addresses": [
+            "20.3.187.198",
+            "74.179.77.204",
+            "20.59.87.225",
+            "20.190.155.3",
+            "23.221.244.249",
+            "199.232.214.172",
+            "150.171.27.12",
+            "8.8.8.8",
+            "131.107.255.255",
+            "150.171.28.12",
+            "199.232.210.172",
+            "40.126.27.128",
+            "20.190.155.2",
+            "20.190.155.1",
+            "20.190.155.65",
+            "20.190.155.16",
+            "20.190.155.131",
+            "20.190.155.130",
+            "20.165.94.63",
+            "20.242.39.171",
+            "172.16.1.1",
+            "172.16.1.255"
+        ],
+        "domains": [
+            "dns.msftncsi.com",
+            "wpad.hostonly",
+            "api.msn.com",
+            "api-msn-com-oneservice-world-default.trafficmanager.net",
+            "api-msn-com.ax-0003.ax-msedge.net",
+            "ax-0003.ax-msedge.net",
+            "ctldl.windowsupdate.com",
+            "bg.microsoft.map.fastly.net",
+            "ctldl.windowsupdate.com.delivery.microsoft.com",
+            "wu-b-net.trafficmanager.net",
+            "cdn.onenote.net",
+            "cdn.onenote.net.edgekey.net",
+            "e1553.dspg.akamaiedge.net",
+            "login.live.com",
+            "www.tm.v4.a.prd.aadg.akadns.net",
+            "www.tm.lg.prod.aadmsa.akadns.net",
+            "prdv4a.aadg.msidentity.com",
+            "login.msa.msidentity.com",
+            "WORKGROUP.hostonly",
+            "client.wns.windows.com",
+            "wns.notify.trafficmanager.net",
+            "slscr.update.microsoft.com",
+            "glb.sls.prod.dcat.dsp.trafficmanager.net",
+            "sls.update.microsoft.com",
+            "fe3cr.delivery.mp.microsoft.com",
+            "glb.cws.prod.dcat.dsp.trafficmanager.net",
+            "fe3.delivery.mp.microsoft.com",
+            "disallowedcertstl.cab",
+            "UNLODCTR.EXE"
+        ],
+        "urls": [
+            "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?d5163c116b8050de",
+            "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?18c5a95926b4cfab"
+        ]
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "network",
+        "download",
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "registry",
+        "file",
+        "execute",
+        "command",
+        "download",
+        "create",
+        "delete"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.487403"
+}

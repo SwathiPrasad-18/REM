@@ -1,0 +1,71 @@
+{
+    "source_file": "ed5365844b204d86fbe0ecda4b0383c3efb19deb188c568774fe3f78aa2a05a1.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\ed5365844b204d86fbe0ecda4b0383c3efb19deb188c568774fe3f78aa2a05a1.html",
+    "report_sha256": "f3af9c1ccd361537e93af9265dcfafe12330a6e7f910636b0ff8bda89774f81f",
+    "sample_sha256": "ed5365844b204d86fbe0ecda4b0383c3efb19deb188c568774fe3f78aa2a05a1",
+    "sample_sha1": null,
+    "sample_md5": "7bf48d2116d178494986367c1e53946d",
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [
+        "996E.exe",
+        "50esro.exe",
+        "79n21sg.exe",
+        "20at5.exe",
+        "99qq57.exe",
+        "5n2ljk8.exe",
+        "60jon.exe",
+        "b869j98.exe",
+        "h96uvp.exe",
+        "bl7ts.exe",
+        "lcg88.exe",
+        "oh3w5.exe",
+        "08hjn.exe",
+        "28who5l.exe",
+        "32hug.exe",
+        "ug2sh.exe"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "996E.exe.dump",
+            "50esro.exe",
+            "79n21sg.exe",
+            "20at5.exe",
+            "99qq57.exe",
+            "5n2ljk8.exe",
+            "60jon.exe",
+            "b869j98.exe",
+            "h96uvp.exe",
+            "bl7ts.exe",
+            "lcg88.exe",
+            "oh3w5.exe",
+            "08hjn.exe",
+            "28who5l.exe",
+            "32hug.exe",
+            "ug2sh.exe",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [],
+    "capa_capabilities": [
+        "process",
+        "file",
+        "create"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:43.395690"
+}

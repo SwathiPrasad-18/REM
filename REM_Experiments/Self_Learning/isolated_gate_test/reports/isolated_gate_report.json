@@ -1,0 +1,15 @@
+{
+  "generated_at_utc": "2026-10-27T16:50:22.386014+00:00",
+  "mode": "isolated_synthetic_test",
+  "input_feedback_rows": 1,
+  "approved_rows": 0,
+  "rejected_rows": 1,
+  "rejections": [
+    {
+      "sample_id": "REM-ISOLATED-TEST-001",
+      "rejection_reasons": "explicitly_excluded"
+    }
+  ],
+  "training_launched": false,
+  "production_files_modified": false
+}

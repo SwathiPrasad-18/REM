@@ -1,0 +1,222 @@
+﻿import hashlib
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+EVIDENCE_DIR = (BASE_DIR / "evidence").resolve()
+REPORT_DIR = BASE_DIR / "reports"
+
+FEEDBACK_PATH = DATA_DIR / "verified_feedback.csv"
+EXCLUSIONS_PATH = DATA_DIR / "training_exclusions.csv"
+REGISTRY_PATH = DATA_DIR / "evidence_registry.csv"
+OUTPUT_PATH = DATA_DIR / "approved_training_feedback.csv"
+REPORT_PATH = REPORT_DIR / "training_gate_report.json"
+REJECTIONS_PATH = REPORT_DIR / "training_gate_rejections.csv"
+
+FEEDBACK_COLUMNS = {
+    "sample_id", "verified_label", "reviewer", "evidence_reference",
+    "review_status", "eligible_for_training",
+}
+REGISTRY_COLUMNS = {
+    "sample_id", "evidence_file", "sha256", "reviewer", "verified_label",
+}
+
+
+def utc_now():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def sha256_file(path):
+    digest = hashlib.sha256()
+    with path.open("rb") as file:
+        for chunk in iter(lambda: file.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def main():
+    for path in (FEEDBACK_PATH, EXCLUSIONS_PATH, REGISTRY_PATH):
+        if not path.is_file():
+            raise FileNotFoundError(f"Required file missing: {path}")
+
+    feedback = pd.read_csv(FEEDBACK_PATH, dtype=str).fillna("")
+    exclusions = pd.read_csv(EXCLUSIONS_PATH, dtype=str).fillna("")
+    registry = pd.read_csv(REGISTRY_PATH, dtype=str).fillna("")
+
+    missing_feedback = FEEDBACK_COLUMNS - set(feedback.columns)
+    missing_registry = REGISTRY_COLUMNS - set(registry.columns)
+
+    if missing_feedback:
+        raise ValueError(
+            f"Feedback file missing columns: {sorted(missing_feedback)}"
+        )
+    if missing_registry:
+        raise ValueError(
+            f"Evidence registry missing columns: {sorted(missing_registry)}"
+        )
+    if "sample_id" not in exclusions.columns:
+        raise ValueError("Exclusion list must contain sample_id.")
+
+    excluded_ids = set(exclusions["sample_id"].str.strip())
+    registry_by_id = {}
+    duplicate_registry_ids = set()
+
+    for _, row in registry.iterrows():
+        sid = row["sample_id"].strip()
+        if not sid:
+            continue
+        if sid in registry_by_id:
+            duplicate_registry_ids.add(sid)
+        else:
+            registry_by_id[sid] = row
+
+    seen_feedback_ids = set()
+    approved = []
+    rejected = []
+
+    for _, row in feedback.iterrows():
+        sid = row["sample_id"].strip()
+        reviewer = row["reviewer"].strip()
+        evidence_ref = row["evidence_reference"].strip()
+        reasons = []
+
+        if not sid:
+            reasons.append("missing_sample_id")
+        elif sid in seen_feedback_ids:
+            reasons.append("duplicate_feedback_sample_id")
+        else:
+            seen_feedback_ids.add(sid)
+
+        if sid in excluded_ids:
+            reasons.append("explicitly_excluded")
+
+        if not reviewer or reviewer.lower() == "nan":
+            reasons.append("missing_reviewer")
+
+        try:
+            label = int(row["verified_label"])
+            if label not in (0, 1):
+                reasons.append("invalid_verified_label")
+        except (TypeError, ValueError):
+            label = None
+            reasons.append("invalid_verified_label")
+
+        if row["review_status"].strip().lower() != "verified":
+            reasons.append("not_verified")
+
+        if row["eligible_for_training"].strip().lower() not in {
+            "true", "1", "yes"
+        }:
+            reasons.append("not_training_eligible")
+
+        if (
+            not evidence_ref
+            or evidence_ref.lower() == "nan"
+            or evidence_ref.upper() == "SYNTHETIC-TEST-ONLY"
+        ):
+            reasons.append("missing_or_synthetic_evidence")
+
+        if sid in duplicate_registry_ids:
+            reasons.append("duplicate_evidence_registry_entry")
+
+        registry_row = registry_by_id.get(sid)
+        if registry_row is None:
+            reasons.append("evidence_not_registered")
+        else:
+            reg_reviewer = registry_row["reviewer"].strip()
+            reg_label_text = registry_row["verified_label"].strip()
+
+            if reg_reviewer != reviewer:
+                reasons.append("reviewer_mismatch")
+
+            try:
+                reg_label = int(reg_label_text)
+                if reg_label not in (0, 1) or reg_label != label:
+                    reasons.append("verified_label_mismatch")
+            except (TypeError, ValueError):
+                reasons.append("invalid_registry_label")
+
+            evidence_name = registry_row["evidence_file"].strip()
+            expected_hash = registry_row["sha256"].strip().lower()
+
+            if not evidence_name:
+                reasons.append("missing_evidence_filename")
+            else:
+                evidence_path = (EVIDENCE_DIR / evidence_name).resolve()
+                try:
+                    evidence_path.relative_to(EVIDENCE_DIR)
+                    path_is_safe = True
+                except ValueError:
+                    path_is_safe = False
+                    reasons.append("evidence_path_outside_evidence_directory")
+
+                if path_is_safe:
+                    if not evidence_path.is_file():
+                        reasons.append("evidence_file_not_found")
+                    else:
+                        actual_hash = sha256_file(evidence_path)
+
+                        if (
+                            len(expected_hash) != 64
+                            or any(c not in "0123456789abcdef" for c in expected_hash)
+                        ):
+                            reasons.append("invalid_registry_sha256")
+                        elif actual_hash != expected_hash:
+                            reasons.append("sha256_mismatch")
+
+        if reasons:
+            rejected.append({
+                "sample_id": sid,
+                "rejection_reasons": ";".join(sorted(set(reasons))),
+            })
+        else:
+            approved.append(row.to_dict())
+
+    approved_df = pd.DataFrame(approved, columns=feedback.columns)
+    rejected_df = pd.DataFrame(
+        rejected, columns=["sample_id", "rejection_reasons"]
+    )
+
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
+
+    if not approved_df.empty:
+        approved_df.to_csv(OUTPUT_PATH, index=False)
+    elif OUTPUT_PATH.exists():
+        OUTPUT_PATH.unlink()
+
+    rejected_df.to_csv(REJECTIONS_PATH, index=False)
+
+    report = {
+        "generated_at_utc": utc_now(),
+        "input_feedback_rows": int(len(feedback)),
+        "approved_rows": int(len(approved_df)),
+        "rejected_rows": int(len(rejected_df)),
+        "excluded_sample_ids": sorted(x for x in excluded_ids if x),
+        "approved_output_created": not approved_df.empty,
+        "approved_output_path": str(OUTPUT_PATH) if not approved_df.empty else None,
+        "rejection_report_path": str(REJECTIONS_PATH),
+        "warning": (
+            "This gate checks record consistency and file integrity only. "
+            "It does not authenticate reviewers or prove that labels are correct. "
+            "Passing records must still undergo human evidence adjudication."
+        ),
+    }
+
+    REPORT_PATH.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    print(json.dumps(report, indent=2))
+
+    if not rejected_df.empty:
+        print("\nRejected records:")
+        print(rejected_df.to_string(index=False))
+
+    if not approved_df.empty:
+        print("\nApproved records:")
+        print(approved_df[["sample_id", "verified_label"]].to_string(index=False))
+
+
+if __name__ == "__main__":
+    main()

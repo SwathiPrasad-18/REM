@@ -1,0 +1,6 @@
+sample_id,created_at_utc,model_version,malicious_probability,predicted_label,confidence,queue,review_status,verified_label,eligible_for_training
+REM-SELFTEST-001,2026-10-27T10:46:04.594616+00:00,self-learning-test,0.97,1,0.97,high_confidence_review,verified,1.0,True
+REM-BRIDGE-TEST-001,2026-10-27T17:24:21.331852+00:00,REM-hybrid-experimental-v0.1,0.9706898797918992,1,0.9706898797918992,high_confidence_review,pending,,False
+REM-DESKTOP-TEST-001,2026-10-27T17:38:53.674072+00:00,REM-hybrid-experimental-v0.1,0.9706898797918992,1,0.9706898797918992,high_confidence_review,pending,,False
+REM-DESKTOP-TEST-002,2026-10-27T17:41:08.969214+00:00,REM-hybrid-experimental-v0.1,0.9706898797918992,1,0.9706898797918992,high_confidence_review,pending,,False
+REM-DESKTOP-F60CA08660,2026-10-27T17:43:57.306505+00:00,REM-hybrid-experimental-v0.1,0.9706898797918992,1,0.9706898797918992,high_confidence_review,pending,,False

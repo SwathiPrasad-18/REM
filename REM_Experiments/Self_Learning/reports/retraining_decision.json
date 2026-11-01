@@ -1,0 +1,22 @@
+{
+  "generated_at_utc": "2026-10-27T16:11:26.225521+00:00",
+  "status": "NOT_READY",
+  "training_launched": false,
+  "approved_record_count": 0,
+  "minimum_required_records": 50,
+  "label_counts": {
+    "0": 0,
+    "1": 0
+  },
+  "evidence_validation_report": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Experiments\\Self_Learning\\reports\\evidence_validation_report.json",
+  "training_gate_report": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Experiments\\Self_Learning\\reports\\training_gate_report.json",
+  "reasons": [
+    "Evidence validation has invalid records",
+    "No valid evidence records in validation report",
+    "Training-data gate rejected records",
+    "Training-data gate approved no records",
+    "approved_training_feedback.csv does not exist",
+    "No approved feedback records are available"
+  ],
+  "warning": "This controller checks prerequisite reports and feedback fields. It does not authenticate reviewers or prove labels correct. It does not launch training."
+}

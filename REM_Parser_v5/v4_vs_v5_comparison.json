@@ -1,0 +1,18 @@
+{
+  "v4": {
+    "reports": 40,
+    "reports_with_verdict": 0,
+    "reports_with_behavior_events": 22,
+    "reports_with_signatures": 11,
+    "total_behavior_events": 400
+  },
+  "v5": {
+    "reports": 40,
+    "parse_errors": 0,
+    "reports_with_verdict": 0,
+    "reports_with_behavior_events": 25,
+    "reports_with_signatures": 11,
+    "total_behavior_events": 450
+  },
+  "interpretation": "Counts measure extraction coverage, not correctness. V5 increased reports with behavior evidence from 22 to 25 and events from 400 to 450. Verdict extraction remains 0 and requires source inspection. Do not train until sampled rows are verified."
+}

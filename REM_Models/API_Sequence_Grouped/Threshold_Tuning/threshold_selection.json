@@ -1,0 +1,20 @@
+{
+  "validation_samples": 239,
+  "minimum_precision_target": 0.8,
+  "selection_rule": "highest validation recall subject to minimum precision",
+  "selected_threshold": 0.38,
+  "selected_validation_metrics": {
+    "accuracy": 0.891213389121339,
+    "precision_malicious": 0.8082191780821918,
+    "recall_malicious": 0.8309859154929577,
+    "f1_malicious": 0.8194444444444444,
+    "false_positive_rate": 0.08333333333333333,
+    "false_negative_rate": 0.16901408450704225,
+    "true_negatives": 154.0,
+    "false_positives": 14.0,
+    "false_negatives": 12.0,
+    "true_positives": 59.0
+  },
+  "validation_roc_auc": 0.931924882629108,
+  "warning": "Threshold selected on validation data only. Do not use these metrics as final test performance."
+}

@@ -1,0 +1,33 @@
+{
+  "CAPE": {
+    "sandbox": "CAPE",
+    "filename": "software.exe",
+    "sha256": "e6f15b6133e299a626f17a9d8cc9ab2f369bbe2364c002f2b0170da8327ad34e [VT] [MWDB] [Bazaar]",
+    "file_size": "40448 bytes",
+    "mitre": [
+      "T1071"
+    ],
+    "accessed_files": [
+      "C:\\Users\\Bruno\\Desktop\\en-US\\software.exe.mui",
+      "C:\\Users\\Bruno\\Desktop\\en\\software.exe.mui",
+      "C:\\Users\\Bruno\\Desktop\\software.exe"
+    ],
+    "read_registry": [
+      "HKEY_CURRENT_USER\\Console\\Colorize",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableUmpdBufferSizeCheck"
+    ]
+  },
+  "Zenbox": {
+    "sandbox": "Zenbox",
+    "filename": "executable.exe",
+    "sha256": "b190b6b892c64f003a08525bcc5b58d58cb0145ab55c14ed62af4a35bc8ffcbe",
+    "entropy": "6.802980292466405",
+    "mitre": [
+      "T1027",
+      "T1027.002",
+      "T1055",
+      "T1082"
+    ]
+  }
+}

@@ -1,0 +1,1511 @@
+{
+  "project_root": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project",
+  "generated_at_utc": "2026-10-26T16:23:11.824663+00:00",
+  "totals": {
+    "files": 248,
+    "bytes": 305504602,
+    "source_code": 28,
+    "config": 3,
+    "dataset_or_features": 139,
+    "report_or_data": 40,
+    "model_artifact": 6
+  },
+  "files": [
+    {
+      "path": "README.txt",
+      "category": "documentation_or_log",
+      "size_bytes": 1050,
+      "sha256": "ca9a5a6508108cd112bb25a63ead0b6ccb7b4af3bd340700a6f45297ec8e44e7"
+    },
+    {
+      "path": "rem_autolabel_output/rem_auto_label_manifest.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 10043,
+      "sha256": "4d11d48732932866b1c6e7e5e8bce21f8b01cadc73c5f24f62c63ba540211114"
+    },
+    {
+      "path": "rem_autolabel_output/summary.json",
+      "category": "dataset_or_features",
+      "size_bytes": 315,
+      "sha256": "9276a60e8afbffbd88ed0f35e411ea9b1e447e675b45eda2b25b67e11c5e11aa"
+    },
+    {
+      "path": "REM_Autonomous_Dev_Agent/.env.example",
+      "category": "other",
+      "size_bytes": 141,
+      "hash_skipped": "sensitive-looking filename"
+    },
+    {
+      "path": "REM_Autonomous_Dev_Agent/.gitignore",
+      "category": "other",
+      "size_bytes": 53,
+      "sha256": "a1e5eeb2c8db5a1ee8e9b5bfde750d654b421baf60a4f8c227eb47fa4dbd3598"
+    },
+    {
+      "path": "REM_Autonomous_Dev_Agent/README.md",
+      "category": "documentation_or_log",
+      "size_bytes": 4005,
+      "sha256": "c2509278fbb8138bc3a06e4cf89c7eaf4622407943820b7d3870f3f2b10b4868"
+    },
+    {
+      "path": "REM_Autonomous_Dev_Agent/rem_agent.py",
+      "category": "source_code",
+      "size_bytes": 3285,
+      "sha256": "c9b912fb9974e01db1bfe04321f3ab172ae3c386a49ff162a3f10e2d0eade816"
+    },
+    {
+      "path": "REM_Autonomous_Dev_Agent/rem_agent/__init__.py",
+      "category": "source_code",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "REM_Autonomous_Dev_Agent/rem_agent/audit.py",
+      "category": "source_code",
+      "size_bytes": 4466,
+      "sha256": "00e41941bed93c3aa822f7c268d9e315a0a9ec624ddcff41651387581b70c19d"
+    },
+    {
+      "path": "REM_Autonomous_Dev_Agent/rem_agent/dataset.py",
+      "category": "source_code",
+      "size_bytes": 9109,
+      "sha256": "fdf2ec9a85dd6899fc6d82e25919c7e9dfb31ce8475a2a01008f38b607ced1bf"
+    },
+    {
+      "path": "REM_Autonomous_Dev_Agent/requirements.txt",
+      "category": "config",
+      "size_bytes": 58,
+      "sha256": "ceb7561da95a030ac3ee27b56844c0cca38cfdc089099826d5403842b0a34db6"
+    },
+    {
+      "path": "REM_Autonomous_Dev_Agent/tests/test_dataset.py",
+      "category": "source_code",
+      "size_bytes": 1502,
+      "sha256": "b7b1c629f518e672abeeb91f7f7c97427505074d2044fb772d179603c8aca978"
+    },
+    {
+      "path": "REM_Datasets/01_Public_Datasets/MalbehavD-V1-main/MalBehavD-V1-dataset.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 2345393,
+      "sha256": "1e39c43a014e9b4ee56766ad6bb367ffe8ec4316eb0be75eb182c3b2d15f6364"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Auto_Label_Output/rem_auto_label_manifest.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 11610,
+      "sha256": "80797bdda008a092456233a9f5249efbf6fbcdf4b0b784c832eacc24f908e40a"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Auto_Label_Output/summary.json",
+      "category": "dataset_or_features",
+      "size_bytes": 361,
+      "sha256": "102579f31fcf1a9c4f4f7276bd66a22614227c952b98215807b7bcae852ce4c0"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/extract_reports.py",
+      "category": "source_code",
+      "size_bytes": 29454,
+      "sha256": "36640cee96aa8ea958ece7f8c6f090d42967b21742c6111cd307d58c9cec000f"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/all_reports.json",
+      "category": "dataset_or_features",
+      "size_bytes": 427081,
+      "sha256": "18a829f7675d3392af1d9c32c0f0dc993ac1df6735ccacc6b4bd6c3059ac5936"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/behavior_events.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 343052,
+      "sha256": "d4847a4eab5b8dd3ac84b378d2e72b9d1ab6d6df6a0631e05c327c9f8214bcf9"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/extraction_log.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 12125,
+      "sha256": "f67eaef6a0f2b435cd0bb9323893703bf5b014e5aaf5b6b5faa3862aba7b0a4f"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/0132fd38787e6b33e3a738d78b04c62822f1546b8ec7ab8153140f508e77cc9f_CAPE.json",
+      "category": "dataset_or_features",
+      "size_bytes": 3676,
+      "sha256": "0665bf890c5773f64fdd35ac085fdc2d4713a164130255a48bfc594d72c70dc3"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/08e7e5f49e3e254e348f69e15ca72bec2dccd8540fc460030415491f67f7d499_CAPE.json",
+      "category": "dataset_or_features",
+      "size_bytes": 4972,
+      "sha256": "dba2eaf78d8c37467376be1fbde4ad8365820ddd9fae97f1a3c81bb70f44c726"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/0a0b6c1073ab6b8759d40a364b8552dd565c20a74f1250005edc6a91e476bc4f_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2274,
+      "sha256": "f15214490d6bfbe59cb96ac18f664788d022a769a20e0ff93d667cb2874a5481"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/0c7b6d7b943cda8b2456adb2d851e344f744bcf75055f4dc8e9750c9ad8af1c0_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1592,
+      "sha256": "3460de3e810034fe7a539418cf147790ded2e01127f521e9f98972f35035b3eb"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/0cc4e8888237002ef7c738b9f7e14c6344487579ac8903c80d3c79dfec8bfef0_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1828,
+      "sha256": "7c7ae23989ae89dbb76ece05e68c797bcf8f59f8037a0cd8d476a0e3306f7dcf"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/0f13dfa94fb51e64f08270fabda291337ecdd23282d810650f99c2d36276b81f_Zenbox.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1673,
+      "sha256": "7101c907a59e18cab13499c04eb0b62bb32488c751e9000515675c18ca3dd5a8"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/19d619d9e62f58c60b6ddbcd019616c8d886ffb7f307c3b2acf22f4a9d221501_CAPE.json",
+      "category": "dataset_or_features",
+      "size_bytes": 4095,
+      "sha256": "534feaa7036b994c17452f88ac891cd8248f91aac6c137c414e85d1f50b9636d"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/1dee13714ebc1720f02d287429b9bc0699e1a58c64ebb6c6c6f12c8e115fabc4_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1644,
+      "sha256": "99b468929e47d72d5c3c74ce7d63e7d31c2e2a1fff1489e8484257316aa10258"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/1f17157b9a004a79a87dd6d78d461f7fd62d7528619bfa0a0dbacf3a9bb9948d_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2709,
+      "sha256": "a4c72836527893414f9003475a6bd2234c4ca30b35ddff363b618926b197f425"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/1f272726b966d9ed044298b139a8cc386d782e98c7143fd00bfe97db4bc119d1_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2290,
+      "sha256": "a906d7e632cf65b0a0cbf5003535ab27608eba522f310db6f6dc4d0bb7c8fccb"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/1f497044e43cd6e3a6add8e579aa967270829d796a5fb4fd0aacf03ea420aec6_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1909,
+      "sha256": "7850355903393d78bd6c4899dacfa23ee9b6e60abb2044f3f11ca40e74b4a9d6"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/1f6332de12bd4ec74bd53481084473f104db3d4defe27a4d730864bdaf9a8ea0_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1644,
+      "sha256": "1da80799d28b21c4a7cc207c14289c3c64b64eff99920eb94be55d1234d99159"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/1f98d901402e9e878677588f52d627a0daf706ea3bb5c4ddb14af7cfdace7040_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2318,
+      "sha256": "916bb0495aee2f373e5b9b6facde45627a959b4cb46503012ef50eaaa3b8c11b"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/25f20ef28263e99e3dc92429d9ffc3e1b3ab938c793ea47b3cd878ffd96863a7_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1857,
+      "sha256": "c3b6bd1820f055fe0e0edf7789c119ddb553e67865b91f66d3c649a941fe4f77"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/282eb13c914a0a9865606221f51518208d50abac01801d837bd9a17b69abf2d4_Zenbox.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1475,
+      "sha256": "79c716bdca672278f921109bb8b82ac089e9eb7045146c9523f5c3937b9d2d7c"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/2ab30d33633d0259559452d65e69762b189c9006d3b31f1f93ba6f92c590ead3_CAPE.json",
+      "category": "dataset_or_features",
+      "size_bytes": 14401,
+      "sha256": "3a69214275af09d9b5c5c8f7191e6ba835bf0b45dc6fa94f5bcddeb82294fb10"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/2d2ed362b86197998951bfc6779f7d7e326235186c7b4f81dc17555e9a2536c9_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1966,
+      "sha256": "0dadb3c58fcbc5ccb38e093c33cb7051fec61ae090dda628b896b1ccf8612b12"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/2d5c28a2718f255e099fc3d88acf1d008ff02f7f3abc1216853a868c0b90306b_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1956,
+      "sha256": "1994b984b890c9c184c2e0a7d3cf15f211730723d2d140d78d65b68f4bbd15c6"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/32e854d2a56d7cb2659d61ba1e89217bdcd7ed82eb91f255fb939842b37fe319_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1755,
+      "sha256": "77d4f0ef8451a6826332cc2a020fd73612c88363b20934c0c96489a7511755c0"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/3b2f41efda68c82d9d50af329ac9b403c806cbe74f87917cdb350e542adda017_CAPE.json",
+      "category": "dataset_or_features",
+      "size_bytes": 4929,
+      "sha256": "13fd7b90870ef43afae153fc4651d3661713f1aa735ce311973ac2d9cd62e98d"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/5a9a5ae741322bfea383c1384d616e466c435a24c44e3322a774b93fbbe70d39_Zenbox.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2287,
+      "sha256": "83ef534a470b9bdcd0b111f375485b126e402cb25c87b590f5a91abad5d23fec"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/69fc832a234847ffbc7691144f4ed21d28322bfea13d15a98fef79cf6b59a595_CAPE.json",
+      "category": "dataset_or_features",
+      "size_bytes": 4076,
+      "sha256": "acae04437ae3d95905091dd0f53a2ed20af8f9005128fd932b031f3fb51eaad4"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/80c10ee5f21f92f89cbc293a59d2fd4c01c7958aacad15642558db700943fa22_CAPE.json",
+      "category": "dataset_or_features",
+      "size_bytes": 35187,
+      "sha256": "94a9082949a40b8697310566e883425968c927f149ac339651fc1d805a22cd83"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/8d9b37c5b10183ffeb07a072ad08002dd9a2ed6123eab68fbd74ba0db0a38976_CAPE_CAPA.json",
+      "category": "dataset_or_features",
+      "size_bytes": 36743,
+      "sha256": "942e6a14295fab45584da7976312acb1310584e7cd63b87ac85d3f2793e92288"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/92e498e500d0e465f898c0119a9f55e2210dc383adfb0f5c654ff5c5ad6a5f83_CAPE.json",
+      "category": "dataset_or_features",
+      "size_bytes": 8207,
+      "sha256": "05492003e9aa40df1f8cfb416b573d24bc3b28c6836cbb4c189f831537560562"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/b190b6b892c64f003a08525bcc5b58d58cb0145ab55c14ed62af4a35bc8ffcbe_Zenbox.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1667,
+      "sha256": "b0286b6d31aeff72d32c0b8a56184b170eea4aaeae21c0a966f93481bc86481b"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/b6e22a56772b91bea1c01852795cc6ddb88f1d9e094dc8b6463995adf0c24a2b_Zenbox.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1473,
+      "sha256": "2fdd84b88e3bc6282cb1543a4d288bc0a9f9ac65985aba7477992f169c63e996"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/bc112c7b85466f7852fe5aef2e141a048c78f3c5100c7333bbd78aa2c57d4b60_CAPE_CAPA.json",
+      "category": "dataset_or_features",
+      "size_bytes": 223124,
+      "sha256": "8f61c930a8defce883fc20e9fbeb9d0c02aae14cd5d09a06c12292a5efb49977"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/c626626554cab357086defacab2f15497cee3adc715518469ec38ecadf81ff14_CAPE.json",
+      "category": "dataset_or_features",
+      "size_bytes": 3938,
+      "sha256": "c72f9224a14245810ed6167e5ee87413ec7bc01c1c97d61a66c09f17e1f34f47"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/ca3b993769e2cf1cbddb2131d61911c6af2c6b015e73c42569a686db0de4fa37_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2384,
+      "sha256": "1da97454ec0a65f061532db2cd19cd04eab8818dcec2bcfe3c1b5469732965d5"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/d6c0043a17091c535f895b79ca8094649b83d915315a18c249daed4de6529b0a_Zenbox.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1630,
+      "sha256": "bce8aa179d212a1df6d25289f930b85ed43df5bf97908aefc5ca11aa8a7d790a"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/e6f15b6133e299a626f17a9d8cc9ab2f369bbe2364c002f2b0170da8327ad34e_CAPE.json",
+      "category": "dataset_or_features",
+      "size_bytes": 4292,
+      "sha256": "ba0cfd59a48d70f8daefa5009c93133ffedbe777b3889466f5512ee7f0fa416a"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/ed1276b68e98b3e8b1e800309b7ae01fc657ea5940d82f8b3da12d1bc6800f01_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2933,
+      "sha256": "46941d2dc50ae9c32f1619b5d1987c72e98c25a5ec4ffaf501691460a25e5a30"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/ed4d8f4196fd32dc08d8cda5e4c952c3ecf526e3491e9ec0c55067ed0ef11f37_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1483,
+      "sha256": "a64b4072671b962175daaf168f8ecb07c63e2c40c3d55aa44bcc47ed24df694b"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/ed5365844b204d86fbe0ecda4b0383c3efb19deb188c568774fe3f78aa2a05a1_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2036,
+      "sha256": "dea911f84c9c04f34d217364466dcb1ac488bc66280f4699f10962c7f495e156"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/edb6ed7dc3cfe10bc34ce9a13c6f1d0b23e2e336f36706f25b3480f42ece3bb8_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2261,
+      "sha256": "08a31e1735b7abdc484a1a859e46497919ad8b4c414aa056191b8c6113f7fd00"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/ef03ee1540620dca4b190fbc7e42a5f1e49a43007a55b64ab0ddd6f9c3cd7749_Sysinternals.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2459,
+      "sha256": "8c5a9ee8f5fcd832e1b8e4d0e9768f19f670af8b34913abb3a3f74081f0c7221"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/fb4311c5910b37011018d65dddf82fab0855f1e7050844042a664ab5707555f1_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1914,
+      "sha256": "a42afc482a88474092e46a212e56284729637daf9536689be83e39370e315b82"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/fb45fd9fcfb94e808497d6d5a965a503dc2722e999c63413d98bafc8151613f2_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1254,
+      "sha256": "3c6a7beca1d4cdb5717917aee323bfb10feb3fb8c1331dd746ee2c79fc15e09e"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/individual_reports/fb829b691bbca14035312460a64782015bf5a9786bf1922c13cb75b342912bc8_Unknown.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1567,
+      "sha256": "1e88a59783ea2644906fbb631afc879aaf0bb3b992138bd52b956fb2e924d72e"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/parse_errors.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 29,
+      "sha256": "7f86416c2858dc0c2b158e030e71be011dc138b955a434790ebb3cd332a4a8f3"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/parse_summary.json",
+      "category": "dataset_or_features",
+      "size_bytes": 159,
+      "sha256": "747065f8f6b05f20efe7a0e9580b1a94379b45022b40ebe4646259fcc92468b4"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/quality_summary.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1026,
+      "sha256": "546c45040bd0aa44b4e2d68282a7a1f36cdc4d6a65da75128a8f5df672aaae17"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/README.txt",
+      "category": "documentation_or_log",
+      "size_bytes": 880,
+      "sha256": "139e113304754dfb934afc73ae7307e9e8ab344341547a02f7b06c407c13ebf2"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/report_features.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 98866,
+      "sha256": "2432849061360ec0a10e078f9de92da47faf2478cdc865a4a6c262914b394f91"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/sample_features.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 5263,
+      "sha256": "4aed2eff490966bca6d74cdd7118226b5fd401bc26db45de7d813f71f537df6a"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/vt_behavior_features.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 42885,
+      "sha256": "0e25124a67dd4419cb6d3283d09852c3cf2f5387049d47c7ba361cfca4ff8861"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Extracted_Data/vt_behavior_features.json",
+      "category": "dataset_or_features",
+      "size_bytes": 78340,
+      "sha256": "1b58f2e30e1bc95a24a01dfbbb2e1b23d331bbb7f4cf182b20214ddd521be22e"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports.zip",
+      "category": "other",
+      "size_bytes": 7656779,
+      "sha256": "40aebbf74109aa5406f7bf863e40c10bbca6699560ff1dd257b8d632b4e4efc0"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/0132fd38787e6b33e3a738d78b04c62822f1546b8ec7ab8153140f508e77cc9f.html",
+      "category": "report_or_data",
+      "size_bytes": 279647,
+      "sha256": "c97958a8433d092f219ce306b5ef10d1687949e178dedb8ab272e482ceaa1b48"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/08e7e5f49e3e254e348f69e15ca72bec2dccd8540fc460030415491f67f7d499.html",
+      "category": "report_or_data",
+      "size_bytes": 290075,
+      "sha256": "0f46b5fb050b5c8fa365bc1d7c5c6649a8f5a5d9183d8cc501323762dfb67400"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/0a0b6c1073ab6b8759d40a364b8552dd565c20a74f1250005edc6a91e476bc4f.html",
+      "category": "report_or_data",
+      "size_bytes": 331051,
+      "sha256": "63e027eb910d06bf9191cae84a26e238089daf1c561b6b459064afeea2a6c03e"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/0c7b6d7b943cda8b2456adb2d851e344f744bcf75055f4dc8e9750c9ad8af1c0.html",
+      "category": "report_or_data",
+      "size_bytes": 291279,
+      "sha256": "8d5590cd11f23b620f826226bb6da121f1f5146170a49449c9292343dfce7944"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/0cc4e8888237002ef7c738b9f7e14c6344487579ac8903c80d3c79dfec8bfef0.html",
+      "category": "report_or_data",
+      "size_bytes": 321808,
+      "sha256": "fb0371760e1ff870c79ecf034750be85cf616cfde4438a3c6b2f24073747c9ca"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/0f13dfa94fb51e64f08270fabda291337ecdd23282d810650f99c2d36276b81f.html",
+      "category": "report_or_data",
+      "size_bytes": 1193162,
+      "sha256": "7ec04d37b3f46dd58c48060d8a3ed35cfb99e97da4e5ff337401feb7ed5a35fc"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/19d619d9e62f58c60b6ddbcd019616c8d886ffb7f307c3b2acf22f4a9d221501.html",
+      "category": "report_or_data",
+      "size_bytes": 280014,
+      "sha256": "6f5c55e7ee3f3385eb0fa023e6cc1a2837282b57bd7964398c9d5a7fefe343d1"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/1dee13714ebc1720f02d287429b9bc0699e1a58c64ebb6c6c6f12c8e115fabc4.html",
+      "category": "report_or_data",
+      "size_bytes": 292009,
+      "sha256": "1825e1c6caa43ab04938b5a90281cbf603e8667894284e330b291a978414e1f1"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/1f17157b9a004a79a87dd6d78d461f7fd62d7528619bfa0a0dbacf3a9bb9948d.html",
+      "category": "report_or_data",
+      "size_bytes": 315345,
+      "sha256": "200c47b26b2b80055a753e4f35cc6bb662cdfb8948e82b422d6dea8ee86b5ec8"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/1f272726b966d9ed044298b139a8cc386d782e98c7143fd00bfe97db4bc119d1.html",
+      "category": "report_or_data",
+      "size_bytes": 331469,
+      "sha256": "bb3e1265505ef6a380c1c98d855b257d6a7ef158113b45a5fd6e80a9a81a0edd"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/1f497044e43cd6e3a6add8e579aa967270829d796a5fb4fd0aacf03ea420aec6.html",
+      "category": "report_or_data",
+      "size_bytes": 335380,
+      "sha256": "ce80d911a1f8bfd024a35f0229738ee983003e17084d76a9c0bb76d6d9ef88c8"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/1f6332de12bd4ec74bd53481084473f104db3d4defe27a4d730864bdaf9a8ea0.html",
+      "category": "report_or_data",
+      "size_bytes": 292219,
+      "sha256": "38b7c000afdf9d61225cd08c59676e6b742c5069e1e6c7e7e46e088e5801f6e8"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/1f98d901402e9e878677588f52d627a0daf706ea3bb5c4ddb14af7cfdace7040.html",
+      "category": "report_or_data",
+      "size_bytes": 331923,
+      "sha256": "7f5d8cf0407754393cb9eceaf1e68d5e557ee87e7c6c861819099a7a90422f9e"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/25f20ef28263e99e3dc92429d9ffc3e1b3ab938c793ea47b3cd878ffd96863a7.html",
+      "category": "report_or_data",
+      "size_bytes": 306821,
+      "sha256": "9eee677af7603b090026b07af5689b5da8a8acf642ae7bc9e9d87576ef1f6e9a"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/282eb13c914a0a9865606221f51518208d50abac01801d837bd9a17b69abf2d4.html",
+      "category": "report_or_data",
+      "size_bytes": 410455,
+      "sha256": "fcfea6b41b63596cfc00239867ea6e675d3f449659eb81b4b7b62817663f9c01"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/2ab30d33633d0259559452d65e69762b189c9006d3b31f1f93ba6f92c590ead3.html",
+      "category": "report_or_data",
+      "size_bytes": 368637,
+      "sha256": "c87f45f45923584881ff313b5df3e5cdfddb7f339620d37b6f748e760786f62f"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/2d2ed362b86197998951bfc6779f7d7e326235186c7b4f81dc17555e9a2536c9.html",
+      "category": "report_or_data",
+      "size_bytes": 305118,
+      "sha256": "f55572cd17958deaa7e29352bde40ff277340be4c33868a943352620dc7ca842"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/2d5c28a2718f255e099fc3d88acf1d008ff02f7f3abc1216853a868c0b90306b.html",
+      "category": "report_or_data",
+      "size_bytes": 336431,
+      "sha256": "8838141823dff46b488001d7d769971541dfd45a71c695b7fc683e2300b7049b"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/32e854d2a56d7cb2659d61ba1e89217bdcd7ed82eb91f255fb939842b37fe319.html",
+      "category": "report_or_data",
+      "size_bytes": 273028,
+      "sha256": "2a860fe526dfe853b7cad73d6c65e00876e4195b3439ba1e0f9d61f5f6014427"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/3b2f41efda68c82d9d50af329ac9b403c806cbe74f87917cdb350e542adda017.html",
+      "category": "report_or_data",
+      "size_bytes": 292001,
+      "sha256": "29e0b8ce6c8fa7855363e5c88754a07ee6195ee720d292028bdfde85928c9964"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/5a9a5ae741322bfea383c1384d616e466c435a24c44e3322a774b93fbbe70d39.html",
+      "category": "report_or_data",
+      "size_bytes": 1341047,
+      "sha256": "b0a41f5b01ab6c40e0fa3a68b71ab338c910ee70354848c7cecc72036390c589"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/69fc832a234847ffbc7691144f4ed21d28322bfea13d15a98fef79cf6b59a595.html",
+      "category": "report_or_data",
+      "size_bytes": 283321,
+      "sha256": "1eab2a21df2275bbf31f114c72ab64351734ae04933b26216587d76342c13a4a"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/80c10ee5f21f92f89cbc293a59d2fd4c01c7958aacad15642558db700943fa22.html",
+      "category": "report_or_data",
+      "size_bytes": 494127,
+      "sha256": "4123fafa34316749c7a5636f9b8aa6f13942f1fa3b034dddbe29b7206b942f75"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/8d9b37c5b10183ffeb07a072ad08002dd9a2ed6123eab68fbd74ba0db0a38976.html",
+      "category": "report_or_data",
+      "size_bytes": 551056,
+      "sha256": "31435593e941595f6b44dbc6c266fb95beb0e121442844eacd4ef3d861104a8c"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/92e498e500d0e465f898c0119a9f55e2210dc383adfb0f5c654ff5c5ad6a5f83.html",
+      "category": "report_or_data",
+      "size_bytes": 316190,
+      "sha256": "14527443dc10e105892f261d9f8de44e63e7b1aabeedeb3bcb861fea8edbac37"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/b190b6b892c64f003a08525bcc5b58d58cb0145ab55c14ed62af4a35bc8ffcbe.html",
+      "category": "report_or_data",
+      "size_bytes": 582164,
+      "sha256": "d8f5201e97bb8e3212c2af5ff222caf9097df85ee8a1694117482a1a0f15bb5b"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/b6e22a56772b91bea1c01852795cc6ddb88f1d9e094dc8b6463995adf0c24a2b.html",
+      "category": "report_or_data",
+      "size_bytes": 582985,
+      "sha256": "1dfec7670b34ded70931ecda183d7761bcf6e23655bf91b3ae6d2bb5d3ef1780"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/c626626554cab357086defacab2f15497cee3adc715518469ec38ecadf81ff14.html",
+      "category": "report_or_data",
+      "size_bytes": 281210,
+      "sha256": "fb6fc16805153386de7201bbf373beaf311581e94a56c38302efe9615bc673c8"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/ca3b993769e2cf1cbddb2131d61911c6af2c6b015e73c42569a686db0de4fa37.html",
+      "category": "report_or_data",
+      "size_bytes": 324228,
+      "sha256": "3e23967e2a0258d56ed52f8cc7336d7ce7bcdcba1e767cb435ef82741836b3ee"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/d0c35728fe114447a8f1cfd9a026dfc320d875870f482e56e970210510b77ed0.html",
+      "category": "report_or_data",
+      "size_bytes": 981904,
+      "sha256": "b94544bce625bd15d158c70e24cc376257a03e984f8e2dacdf678b47abb4600b"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/d6c0043a17091c535f895b79ca8094649b83d915315a18c249daed4de6529b0a.html",
+      "category": "report_or_data",
+      "size_bytes": 1904220,
+      "sha256": "835039d90ef6d4dc282515677ad6f25c1d4ab6bad69eb6d52514204c352ee593"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/e6f15b6133e299a626f17a9d8cc9ab2f369bbe2364c002f2b0170da8327ad34e.html",
+      "category": "report_or_data",
+      "size_bytes": 3730572,
+      "sha256": "c049ebd6065d41f240f88e666ae414e2690950a03db3a480147d579c00696497"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/ed1276b68e98b3e8b1e800309b7ae01fc657ea5940d82f8b3da12d1bc6800f01.html",
+      "category": "report_or_data",
+      "size_bytes": 319891,
+      "sha256": "da26beb62e49396f613e21e15d19dfb8c13a06a6958490472064445bf83fe60d"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/ed4d8f4196fd32dc08d8cda5e4c952c3ecf526e3491e9ec0c55067ed0ef11f37.html",
+      "category": "report_or_data",
+      "size_bytes": 269128,
+      "sha256": "51bd19da56fe2e2b0d0d9c6f096da56e60fa422ca11f220a52b99bed8b7148c9"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/ed5365844b204d86fbe0ecda4b0383c3efb19deb188c568774fe3f78aa2a05a1.html",
+      "category": "report_or_data",
+      "size_bytes": 297881,
+      "sha256": "f3af9c1ccd361537e93af9265dcfafe12330a6e7f910636b0ff8bda89774f81f"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/edb6ed7dc3cfe10bc34ce9a13c6f1d0b23e2e336f36706f25b3480f42ece3bb8.html",
+      "category": "report_or_data",
+      "size_bytes": 331302,
+      "sha256": "2ef4319762759e13d6929b0f83367a858096a80f416ead99e9573af7f2cde20f"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/ef03ee1540620dca4b190fbc7e42a5f1e49a43007a55b64ab0ddd6f9c3cd7749.html",
+      "category": "report_or_data",
+      "size_bytes": 339679,
+      "sha256": "97948c7d76a89a0e9c42bfd5c780faa822a7a968dbe695070f6cc598ec74f3fe"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/fb4311c5910b37011018d65dddf82fab0855f1e7050844042a664ab5707555f1.html",
+      "category": "report_or_data",
+      "size_bytes": 336867,
+      "sha256": "e87c437d2c13f78ab46c9719eaeae02a7720dfbaa59af967e6e719dc0cfcae7f"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/fb45fd9fcfb94e808497d6d5a965a503dc2722e999c63413d98bafc8151613f2.html",
+      "category": "report_or_data",
+      "size_bytes": 267578,
+      "sha256": "18f4b922576c14b130090e3cc8fa964b70cf1e262644c77a82ede33d04b705fe"
+    },
+    {
+      "path": "REM_Datasets/02_VirusTotal_Reports/Raw_Reports/fb829b691bbca14035312460a64782015bf5a9786bf1922c13cb75b342912bc8.html",
+      "category": "report_or_data",
+      "size_bytes": 319724,
+      "sha256": "8a2cc8ef16cc55d19e18b68a413187200449d07586f53aa46e0e837258833c14"
+    },
+    {
+      "path": "REM_Datasets/03_Common_Reports/malware_behavior_dataset.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 17061946,
+      "sha256": "5710c1a80adadf1b6539c218293803e70ad681f51e409811a139401a97710d14"
+    },
+    {
+      "path": "REM_Datasets/03_Common_Reports/malware_behavior_v2_hard_part1.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43174826,
+      "sha256": "000b2b2cf446a3c19e052aaff76d2f512fb6f8a0d8717292ad5027f1e634aca4"
+    },
+    {
+      "path": "REM_Datasets/03_Common_Reports/malware_behavior_v2_hard_part2.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43178301,
+      "sha256": "15cf561f72144f930a737c8a334503572072983b042a203286273572166a646f"
+    },
+    {
+      "path": "REM_Datasets/03_Common_Reports/malware_behavior_v2_hard_part3.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43181268,
+      "sha256": "4b638d96c929a04c2dd6c0c475b22db87d88585a4565dfc9db26f28e4d9d1ffc"
+    },
+    {
+      "path": "REM_Datasets/03_Common_Reports/malware_behavior_v2_hard_part4.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43171810,
+      "sha256": "26740460e27831de29ecdc6a599c11bf6a02386166bde2736696b82421745d70"
+    },
+    {
+      "path": "REM_Datasets/03_Common_Reports/malware_behavior_v2_hard_part5.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43173387,
+      "sha256": "919c6ceb9abca9f20f9f956feb0dfac5267746271809e912c1b774208c93936c"
+    },
+    {
+      "path": "REM_Datasets/04_Unified_Dataset/MalBehavD_V1_cleaned_deduplicated.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 2262665,
+      "sha256": "6d040ff65a88bb39ca0d80da44772c9b8447ee6ef6c88c0b12bd346677cf3efd"
+    },
+    {
+      "path": "REM_Datasets/04_Unified_Dataset/processed/preprocessing_summary.json",
+      "category": "dataset_or_features",
+      "size_bytes": 627,
+      "sha256": "42d571e9586d4f18f4bc40e420f5678be13d5ea760a9d24df93a29bfcf7192aa"
+    },
+    {
+      "path": "REM_Datasets/04_Unified_Dataset/processed/public_duplicate_hash_audit.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 517,
+      "sha256": "8708788c55286655c57cbab66e3f647c34506b0c48438383ef297a69193fb897"
+    },
+    {
+      "path": "REM_Datasets/04_Unified_Dataset/processed/public_labeled_candidate.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 2597195,
+      "sha256": "0ae08edd1f7f4051488779d828c6e40e3e227d15c8532bb6667a709305b51325"
+    },
+    {
+      "path": "REM_Datasets/04_Unified_Dataset/processed/rem_reports_enriched.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 72658,
+      "sha256": "81a7fccaadf560ceab77acdbfa928d3a4ce8e5d02161c6fe9250238ce7bfdc6b"
+    },
+    {
+      "path": "REM_Datasets/04_Unified_Dataset/REM_MalBehavD_V1_inspection_summary.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1078,
+      "sha256": "588545b17d45cfd874ea2ad19650fe8e6d34fd2324a58acdf28db14f95d4c396"
+    },
+    {
+      "path": "REM_Datasets/04_Unified_Dataset/REM_VT_MalBehavD_hash_match.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 12204,
+      "sha256": "9b0d2b5cc1ab1000dbb2d145e23a8c3f0d734cd9bc46406c870578fcc389dbc4"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Baseline/api_sequence_rf_pipeline.joblib",
+      "category": "model_artifact",
+      "size_bytes": 7002565,
+      "sha256": "8a32e9dc4e2e9d816c632e8105b8fe6b56558e93b9e32f1278f259314577163a"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Baseline/feature_columns.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1423,
+      "sha256": "1d7e2d9c686edafe4718b2636a8e3950111c135554e1be233b427d00acbf2b19"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Baseline/feature_importance.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 4387,
+      "sha256": "cbc57989f5299a0ff12b24561b623a87077954c7656d3fabb160c98c2f7129a0"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Baseline/metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 6023,
+      "sha256": "78a8435770156bb400676d805e6700dc990e77dc29d5d3da20fb46b8e1e2786f"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Baseline/split_manifest.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 208923,
+      "sha256": "6bb66424200a3320e3ab73293a2354f3d3283a04b7025fdaac46f07cc4881cf6"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Grouped/grouped_api_sequence_rf.joblib",
+      "category": "model_artifact",
+      "size_bytes": 6033685,
+      "sha256": "9fc5aad0657237fd62809feac5d37fd46cce0d9715b0441ade95e588793c5350"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Grouped/grouped_split_manifest.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 222344,
+      "sha256": "0dcd74caf5b93e261a3bade7504b0731fb7693a8988618baa1c46c28c692c4db"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Grouped/metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2763,
+      "sha256": "c23d655e2f73ade42f78664aee480e5224746c72507565aa642d329b472c22f2"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Grouped/quarantined_conflicting_sequences.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 14271,
+      "sha256": "e9aa836802bbccb5c983552ad23d319802147320f4152dc0e09fd65bc9130bc0"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Grouped/Threshold_Tuning/test_threshold_metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1046,
+      "sha256": "83b6e3ed9514b3098bbda034c0a5173919b21344c50fa491e3fddd55e0e52a76"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Grouped/Threshold_Tuning/threshold_selection.json",
+      "category": "dataset_or_features",
+      "size_bytes": 764,
+      "sha256": "3c1eabaac013425cfa6fe10c1b1aca2a2ae8a0796ba75fb7315926a63f0d7ab3"
+    },
+    {
+      "path": "REM_Models/API_Sequence_Grouped/Threshold_Tuning/validation_threshold_metrics.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 9844,
+      "sha256": "e559c4ad077f150a46109a9114ff3e263bfc1ef8961a0eb6e361c047e0b1a660"
+    },
+    {
+      "path": "REM_Models/compare_rem_models.py",
+      "category": "source_code",
+      "size_bytes": 3091,
+      "sha256": "8215e7a381d7ff87e17c78a408c041565bbe86335fee9a5517af1aabacf03a43"
+    },
+    {
+      "path": "REM_Models/evaluate_rf_threshold.py",
+      "category": "source_code",
+      "size_bytes": 2884,
+      "sha256": "bd0e3ad2342a9d8f9410d6d588c23ebf36db10298d7f2d05dc87432f5321bed6"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Artifacts/rem_meta_classifier.joblib",
+      "category": "model_artifact",
+      "size_bytes": 2065,
+      "sha256": "e8a5525fc3eac5c9b00fd5f4a3d330a616224fc9ed19bc8aa14b77836303aec0"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/audit_stacking.py",
+      "category": "source_code",
+      "size_bytes": 3640,
+      "sha256": "afd9661be6985f06341686837028c682d6357804d3b80a46cebe4ad22df4ab3b"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/compare_hybrid_baselines.py",
+      "category": "source_code",
+      "size_bytes": 7993,
+      "sha256": "6f9b1737a0d1c29291a87721976437a0bc889c3842f702281df11cb7bd45ec99"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/generate_evaluation_report.py",
+      "category": "source_code",
+      "size_bytes": 7393,
+      "sha256": "19b04aec5b8facb9beafad77fcb20bd9b16040b2b1ecc4908187c3231006db40"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/generate_lstm_oof.py",
+      "category": "source_code",
+      "size_bytes": 6564,
+      "sha256": "1bc816d9aa2f661b52ee1d521ba5e9cf8ee2790247a6199c54f8e4f772c30ee4"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/generate_oof_predictions.py",
+      "category": "source_code",
+      "size_bytes": 6261,
+      "sha256": "309032d656a20dbce8ea92b8d24ff866a0230e549920d9ec72ad00d9709499a5"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/aggregate_metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1865,
+      "sha256": "90113854f820ad26cfabfcdb0811baf81a9cfc9a9773d7a1568f6b05db8ad15a"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/all_outer_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 215958,
+      "sha256": "f4d9b96bb3fc71bb74e2a7f9ac6d41eb619b97d0b72bc2e5db22edb3b7119a49"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/fold_metrics.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 987,
+      "sha256": "1adc34431fd7aee3a70e1755581b83f1545ec8e85a1c03910bd4682c81c64a07"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/outer_fold_1_metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 514,
+      "sha256": "3eaecf6f21d8224b6ea6ab553a79a24e98021e3694196bf7a1b87d3b2cd075c6"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/outer_fold_1_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43435,
+      "sha256": "a61670b8cbd55a80775e6e97de24ac04dfdf708d3de69e6176ac995642d6b279"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/outer_fold_2_metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 489,
+      "sha256": "f89cb31a994c01b24d6415705cfdc186adda802e87addd7c0ad8b496f810001d"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/outer_fold_2_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43206,
+      "sha256": "3bb0e787ea37059fdd567abd6d9b37c903fb03dabcee88e0707ae95e083159e7"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/outer_fold_3_metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 513,
+      "sha256": "ddf7f2ce9d388c47b016d63ad411fe59412f614377bbff74995ddf188838d30b"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/outer_fold_3_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43175,
+      "sha256": "376cf6f09db0edf1647c78574454ebba2434006798997647453c80c2cd31e17c"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/outer_fold_4_metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 512,
+      "sha256": "66a1ad9f7fc388b041402b4b599abc5b0c84578edfe6851d90121267ab5706bd"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/outer_fold_4_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43242,
+      "sha256": "2f84332e5a65cfe7675fffb0fd322ba17edd148eda5360daf5abf67cbad8765e"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/outer_fold_5_metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 515,
+      "sha256": "06c1a684f595ab5316bd1402f82939d5f9e1209f3fc49f380281f81b402980d7"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/outer_fold_5_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43256,
+      "sha256": "b76a29ef3db8e4f93ac484f8c7b353beea32b56a4262095175fa15a0389336db"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Full_Results/summary_report.md",
+      "category": "documentation_or_log",
+      "size_bytes": 1362,
+      "sha256": "53a460e904c1eb499325d7d6ab797655b92de6dae13cfa54b23a7652ee931c71"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/nested_stacking_evaluation.py",
+      "category": "source_code",
+      "size_bytes": 27569,
+      "sha256": "db3bc62124e5004ab52ff96dee9cd7ff5d80b5d97784eca6237dd5aec81faaaa"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/smoke_test_metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 575,
+      "sha256": "ec90f45b5dac11364ba4f8dceb305a9700e979b89d94382c19ffa64bf76cbb23"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/smoke_test_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 32110,
+      "sha256": "59cc2a5783deb7e01d0a5f2f4e62b4bdb01e7cae0d226c35caf23b59a10cf8c3"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Smoke_Test_Results/aggregate_metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1757,
+      "sha256": "0ff65c080075b4027bc7367c2018a6033a57ebfc863c62206f5bdd9bb4566125"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Smoke_Test_Results/all_outer_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43431,
+      "sha256": "884e9c3331e2b09cf808751638ae6cf814e352b328da83d18f0a63f9b656cff6"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Smoke_Test_Results/fold_metrics.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 346,
+      "sha256": "b259861d01f2e68a52ca4f247193a7b3630217c6411e7c94441f78e8e3af1c2b"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Smoke_Test_Results/outer_fold_1_metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 514,
+      "sha256": "3eaecf6f21d8224b6ea6ab553a79a24e98021e3694196bf7a1b87d3b2cd075c6"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Smoke_Test_Results/outer_fold_1_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 43431,
+      "sha256": "884e9c3331e2b09cf808751638ae6cf814e352b328da83d18f0a63f9b656cff6"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Nested_Evaluation/Smoke_Test_Results/summary_report.md",
+      "category": "documentation_or_log",
+      "size_bytes": 1147,
+      "sha256": "fbf72de16eb400a26bc6becc41d7dc3e51ea1f239d272c1c1812176695f11662"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/OOF_Predictions/lstm_oof_metadata.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1076,
+      "sha256": "13ca62f872139fbd6893d555b5c802eba886688dbdb04e5c94a400c5b9889cbd"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/OOF_Predictions/oof_metadata.json",
+      "category": "dataset_or_features",
+      "size_bytes": 389,
+      "sha256": "46b9f04ad656b30c5a118ce9495a5644f830338fb5a4582a7a8eec21c1e3cc77"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/OOF_Predictions/train_oof_lstm.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 160492,
+      "sha256": "06baee3d07ad6f1c5a030e3674678acb27a5cc724754d3f8f6eb97441a850301"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/OOF_Predictions/train_oof_rf_if.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 180114,
+      "sha256": "247494ccb67110ff1b55ba7d248ab49c41c70faa32eaab62abfccc0dc1a2f487"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/all_models_test_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 70016,
+      "sha256": "1f5052c3e9ee9c0a67f1c9d795407cbe51c1fb40e6a1a8af4ddffe17eaf31fc4"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/Figures/accuracy.png",
+      "category": "other",
+      "size_bytes": 76877,
+      "sha256": "f43266ce9d4017e1eaf6a2c9687fa9c38d61784a506da7fb18851110a058a8b8"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/Figures/isolation_forest_confusion_matrix.png",
+      "category": "other",
+      "size_bytes": 50922,
+      "sha256": "e206abe2b8c3b9809bfe830adf244f33a0d37f7111d5c7ec3a88195535403a2d"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/Figures/lstm_confusion_matrix.png",
+      "category": "other",
+      "size_bytes": 44978,
+      "sha256": "916bb32d52f0acaff75df5a58bfe37481a7365c380f2662ca808fb5c0fb29db1"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/Figures/malware_f1.png",
+      "category": "other",
+      "size_bytes": 74275,
+      "sha256": "f1b8a8acb28140c0eab24a98be31049a8c2f63ca32daf1bdf89db8c61d225b8e"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/Figures/malware_precision.png",
+      "category": "other",
+      "size_bytes": 81369,
+      "sha256": "4f4d1b4600ecedb32be85cc9df7e71568727d9ac3841bedecc653f95771e9da3"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/Figures/malware_recall.png",
+      "category": "other",
+      "size_bytes": 79311,
+      "sha256": "890c5bac352ddd371691bc7dbd67ecbf7933e9c66d06ab84928ba34c54876231"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/Figures/precision_recall_curves.png",
+      "category": "other",
+      "size_bytes": 148576,
+      "sha256": "cf0fba0b8d63ed6ec955b3162beea8a8704640109d31d72472218acdb0cf5ef7"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/Figures/random_forest_confusion_matrix.png",
+      "category": "other",
+      "size_bytes": 52295,
+      "sha256": "485195814940aba1f648cb370283a27ba41d8d1fe53d002dbe8e08ae48b69396"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/Figures/rem_hybrid_confusion_matrix.png",
+      "category": "other",
+      "size_bytes": 48532,
+      "sha256": "4f8272c641065341413c7c09d27235b489e3a57cd6b91456c65a022e43b4d667"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/Figures/roc_auc.png",
+      "category": "other",
+      "size_bytes": 77307,
+      "sha256": "8a21e0152480398571572ea36cc46fb0c786cc4dd108e4890ab05b718926b50f"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/Figures/roc_curves.png",
+      "category": "other",
+      "size_bytes": 163280,
+      "sha256": "721c89fb99b8ae9adc1712d96257878f34791620781a3c32532a44671f360411"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/hybrid_metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 3340,
+      "sha256": "4d0f15667358e9ea93f541f7d5fe8c308e9c9aa6007e52fba8dd6b9b4a4bffae"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/hybrid_vs_baselines.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 688,
+      "sha256": "e564bb7ea03616a210f53865cdd051e507b3f8038edeaa22f662ca63e213fee7"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/meta_training_oof.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 198463,
+      "sha256": "fd91537483c53cb3a9c2befae2b41bfbcbbc2c959ef73adb271ee906199a5e1c"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/oof_base_score_auc.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 126,
+      "sha256": "d26e96ff6e72f8639e63bfbaa82f65d843174d699388d35a9444f0dd961b49e8"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/oof_fold_score_summary.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 3450,
+      "sha256": "55e6ac67458072ac5274dcb9581ec66bd977f172e3b761b438ff62d256604a98"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/oof_vs_full_model_score_distributions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 728,
+      "sha256": "ce1b8f968b38a9b8c5c808ee927c5b3d52a0d0163d85443aaec89dbd84e5fa99"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/precision_recall_summary.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 152,
+      "sha256": "2ac96b0363c5b9e31de4c4096f75f7b37e9a7e7d53b8bf9760778eb5a519a4dd"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/REM_evaluation_report.md",
+      "category": "documentation_or_log",
+      "size_bytes": 3635,
+      "sha256": "912986a068d9f917011ac67a390130197847a1e4c5358f4ca7680e41bce9e4c3"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/roc_auc_summary.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 142,
+      "sha256": "9c91afe0cb251c3a167d67254e729afb9936a09fba2f5db957511baa0d52d880"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/stacking_audit.json",
+      "category": "dataset_or_features",
+      "size_bytes": 715,
+      "sha256": "1f79a299f2ad1395b18f714ced5c5b7c7efea6e572b86aa6524bb397df0474e5"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/test_hybrid_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 66502,
+      "sha256": "7be2c3f2fec7535ce531fc1ea1346d8ae3913d603e40961dce621894364658d4"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/validation_hybrid_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 51220,
+      "sha256": "78cffca778e458f2c27bb1e23b3122caae755163332eeb871840fd6ad92ed90e"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/Reports/validation_threshold_metrics.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 31799,
+      "sha256": "7729f13a4ea3dfb9fd2e56572413e8db16abc378a61b871eb13479a26c7bb3b4"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/train_hybrid_rem.py",
+      "category": "source_code",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "REM_Models/Hybrid_REM/train_meta_classifier.py",
+      "category": "source_code",
+      "size_bytes": 17779,
+      "sha256": "5f68de34c75bbe1187f556d836d4173af29daa1dad70a5fa24d66329649cc8a9"
+    },
+    {
+      "path": "REM_Models/Isolation_Forest_Baseline/isolation_forest.joblib",
+      "category": "model_artifact",
+      "size_bytes": 17346308,
+      "sha256": "a54a2d41e1c9083f89c421b573f735c3fcfecb2a37ec45a4be6c122c43a33360"
+    },
+    {
+      "path": "REM_Models/Isolation_Forest_Baseline/metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1562,
+      "sha256": "2c29cceb726e73271a8f4e2b217910e8a3b618421f50ba326dc7758a9a053ce5"
+    },
+    {
+      "path": "REM_Models/Isolation_Forest_Baseline/quarantined_conflicts.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 14271,
+      "sha256": "e9aa836802bbccb5c983552ad23d319802147320f4152dc0e09fd65bc9130bc0"
+    },
+    {
+      "path": "REM_Models/Isolation_Forest_Baseline/test_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 28562,
+      "sha256": "bb0e8a710985235ad4b42ba335112a202e6f5b2738c8d07db95c8bbf9d971fcd"
+    },
+    {
+      "path": "REM_Models/Isolation_Forest_Baseline/validation_threshold_metrics.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 14958,
+      "sha256": "fed6658ce4f751e8950a220eb7cd6fa3d28ff29683e3a255eec85dafefa0194b"
+    },
+    {
+      "path": "REM_Models/LSTM_Baseline/metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1666,
+      "sha256": "ee7e76c8c1e9cd0df767712ea21eefd0857aa2ca7187348840ae7f665e37659f"
+    },
+    {
+      "path": "REM_Models/LSTM_Baseline/rem_lstm.keras",
+      "category": "model_artifact",
+      "size_bytes": 681368,
+      "sha256": "4bcb63669dd7a4f326230aea782a61cccc78417c74c565c9e46962649293cfa6"
+    },
+    {
+      "path": "REM_Models/LSTM_Baseline/test_predictions.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 26025,
+      "sha256": "3cc3086de4d732d758d31252146827e28faf00c78360c0f1c70ed81e5bb16d99"
+    },
+    {
+      "path": "REM_Models/LSTM_Baseline/validation_threshold_metrics.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 4828,
+      "sha256": "e284cae95e7afd6d394c837a0b97c1885181a26dd93ec135fc17ae7f8042a0d4"
+    },
+    {
+      "path": "REM_Models/LSTM_Baseline/vocabulary.json",
+      "category": "dataset_or_features",
+      "size_bytes": 7869,
+      "sha256": "c55d4e1468b28ca68834f8d34bab7b91266c98fdb64b7a6f6a5a7bcb865d8c76"
+    },
+    {
+      "path": "REM_Models/Model_Comparison/accuracy.png",
+      "category": "other",
+      "size_bytes": 18184,
+      "sha256": "820b833981911ee9e39fda182d3283d0e6a2d3bec8e1a42138cdaf6f28b4e91c"
+    },
+    {
+      "path": "REM_Models/Model_Comparison/comparison_report.md",
+      "category": "documentation_or_log",
+      "size_bytes": 1138,
+      "sha256": "48b5037471dd0197c8d105a30595f90434c98677be067665feb3e3394ad955a2"
+    },
+    {
+      "path": "REM_Models/Model_Comparison/malware_f1.png",
+      "category": "other",
+      "size_bytes": 18558,
+      "sha256": "343254900a187652ddfc4ab75d96ad1bf121747feec05720f409bc69f646f89a"
+    },
+    {
+      "path": "REM_Models/Model_Comparison/malware_precision.png",
+      "category": "other",
+      "size_bytes": 20444,
+      "sha256": "674277db29981b7b96e57cd7572c8f0cf3c18419cd0d50df459b53596740aa1f"
+    },
+    {
+      "path": "REM_Models/Model_Comparison/malware_recall.png",
+      "category": "other",
+      "size_bytes": 19472,
+      "sha256": "d3e588b2087843081fc136e3c0127cc3504c23aa9576cdb9c8065400aa9566c7"
+    },
+    {
+      "path": "REM_Models/Model_Comparison/model_comparison.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 341,
+      "sha256": "8740b21b5141085394b226c10105c98f8e0b2851a3ce778a6386c95440ca28d9"
+    },
+    {
+      "path": "REM_Models/Model_Comparison/roc_auc.png",
+      "category": "other",
+      "size_bytes": 18841,
+      "sha256": "77264a6a8948c4cfa8806261d334176bf99cb11e7a308426a57814ce825e02f8"
+    },
+    {
+      "path": "REM_Models/README.txt",
+      "category": "documentation_or_log",
+      "size_bytes": 975,
+      "sha256": "bba03fa8ed3e4da34a74c44c16a7ce9aa3761c81c21e67217cc35929c8326200"
+    },
+    {
+      "path": "REM_Models/RF_Baseline/feature_columns.json",
+      "category": "dataset_or_features",
+      "size_bytes": 2332,
+      "sha256": "2c3c83e18e824952306ca3eb8a8887d3495710bc8e4f24c14aa5e0d9f7788282"
+    },
+    {
+      "path": "REM_Models/RF_Baseline/feature_importance.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 7026,
+      "sha256": "77e42fb4b6ab5c112357bfd2e57dcf6ce56c43d3e17fba77ca6e53c3c9c82da5"
+    },
+    {
+      "path": "REM_Models/RF_Baseline/metrics.json",
+      "category": "dataset_or_features",
+      "size_bytes": 7983,
+      "sha256": "501e55e1258c6b441fbfaee6ecb97cde198ce6606f423e77f5accfc73b260cb4"
+    },
+    {
+      "path": "REM_Models/RF_Baseline/random_forest_pipeline.joblib",
+      "category": "model_artifact",
+      "size_bytes": 372066,
+      "sha256": "a15da2a43987f5e78cd768510c9372bba6c274de6c6fd1b15d210ce6c47cfb52"
+    },
+    {
+      "path": "REM_Models/RF_Baseline/split_manifest.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 189610,
+      "sha256": "ad26d0e760ac9e81ca8fe897a5e137a3b5b318c1f5a3dbd4f3023f82bf81e77d"
+    },
+    {
+      "path": "REM_Models/train_api_sequence_baseline.py",
+      "category": "source_code",
+      "size_bytes": 9628,
+      "sha256": "a7133fcd5013d8df3d717eb9074b4b5f9b52c6749a2f210cd01e361d5201b771"
+    },
+    {
+      "path": "REM_Models/train_api_sequence_grouped.py",
+      "category": "source_code",
+      "size_bytes": 7639,
+      "sha256": "709f3c683eaaa0d5d1176aa25d8fe8350f6d857301deb950ad13d173c07f3ac7"
+    },
+    {
+      "path": "REM_Models/train_isolation_forest.py",
+      "category": "source_code",
+      "size_bytes": 7798,
+      "sha256": "522c7c7471d67d8bda4e617423fca63cbf8539649ebbad2da671ade60c38663c"
+    },
+    {
+      "path": "REM_Models/train_lstm_baseline.py",
+      "category": "source_code",
+      "size_bytes": 9019,
+      "sha256": "2229f9077b0370dada02882b168b607863100ed0d71d6332e6a5d68b721534b7"
+    },
+    {
+      "path": "REM_Models/train_rf_baseline.py",
+      "category": "source_code",
+      "size_bytes": 10451,
+      "sha256": "9c98fd20991900d8bd3e75184e49c8fc01a063feeaff11de4adf1d5e0297dd24"
+    },
+    {
+      "path": "REM_Models/tune_rf_threshold.py",
+      "category": "source_code",
+      "size_bytes": 5764,
+      "sha256": "8da945092ce3d4995a3eea630509ba56b0af10f5f558f939423785e34545d108"
+    },
+    {
+      "path": "REM_Parser_v5/output/behavior_events.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 267771,
+      "sha256": "0c0269e3a31204950b145ae60aaae23ed2271e7a6d5cd05b916858ce1539506f"
+    },
+    {
+      "path": "REM_Parser_v5/output/extraction_log.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 13167,
+      "sha256": "8fc5389e08a7ae16953fbe1a920edbc31371414b7fba5c26b76ec3ce301eff0d"
+    },
+    {
+      "path": "REM_Parser_v5/output/parse_errors.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "REM_Parser_v5/output/quality_summary.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1122,
+      "sha256": "b3d38e35a46e2a4f49cd0c1628412115e48fac72ab6a5898aab7e4a3030f4eaa"
+    },
+    {
+      "path": "REM_Parser_v5/output/README.txt",
+      "category": "documentation_or_log",
+      "size_bytes": 355,
+      "sha256": "2b0c490bbab4013e79c2d168bc5f33d451198fbdc45bba8fe3ce3e92ad799a9c"
+    },
+    {
+      "path": "REM_Parser_v5/output/report_features.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 58226,
+      "sha256": "f4104c03e65f1a7321bea6b23fa3ef7d866e7bbe69f3211c642a62d10fa88f8e"
+    },
+    {
+      "path": "REM_Parser_v5/parse_reports_v5.py",
+      "category": "source_code",
+      "size_bytes": 16811,
+      "sha256": "a23c809622f667e5ccf2892c65ad5d0a07b482587491fe8a1d83622e7b003734"
+    },
+    {
+      "path": "REM_Parser_v5/README.txt",
+      "category": "documentation_or_log",
+      "size_bytes": 628,
+      "sha256": "e452cf9e741426addf0cbf4ef84627be8f7842c0ac172bc97949e5eab2d46811"
+    },
+    {
+      "path": "REM_Parser_v5/v4_vs_v5_comparison.json",
+      "category": "dataset_or_features",
+      "size_bytes": 640,
+      "sha256": "941f7f954daf969e1a37502254708355a848f0d1538195122150647c2b3f9203"
+    },
+    {
+      "path": "REM_Preprocessing/README.txt",
+      "category": "documentation_or_log",
+      "size_bytes": 1050,
+      "sha256": "ca9a5a6508108cd112bb25a63ead0b6ccb7b4af3bd340700a6f45297ec8e44e7"
+    },
+    {
+      "path": "REM_Preprocessing/rem_preprocess.py",
+      "category": "source_code",
+      "size_bytes": 7675,
+      "sha256": "6d1432d02a142e75cb7e1c5c79a547d2c6cf24a4c86ebc0abadca18209a11f86"
+    },
+    {
+      "path": "REM_Tools/diagnose_reports.py",
+      "category": "source_code",
+      "size_bytes": 1077,
+      "sha256": "ad247753f9df1acc76238acb3512b09c71a24dd83517b0d6ab56074fbdd8e77d"
+    },
+    {
+      "path": "REM_Tools/parse_reports.py",
+      "category": "source_code",
+      "size_bytes": 15707,
+      "sha256": "f77f4e0e0008c1b116f08b05337de0f9eb75ff41af87f7b9a0fc1ce4e0d1ef38"
+    },
+    {
+      "path": "REM_Tools/parsed/behavior_events.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 70,
+      "sha256": "c4c2166fbda980b10efa72ba20c5d39d4d2e84326cf52b1a40821312823a3861"
+    },
+    {
+      "path": "REM_Tools/parsed/extraction_log.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 89,
+      "sha256": "1620560a0fd4009bc3d7e82b80422662bf7edbde1e443e1c3e923293b6313cb5"
+    },
+    {
+      "path": "REM_Tools/parsed/report_features.csv",
+      "category": "dataset_or_features",
+      "size_bytes": 5,
+      "sha256": "f01a374e9c81e3db89b3a42940c4d6a5447684986a1296e42bf13f196eed6295"
+    },
+    {
+      "path": "REM_Tools/parsed/report_features.jsonl",
+      "category": "dataset_or_features",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "REM_Tools/README.md",
+      "category": "documentation_or_log",
+      "size_bytes": 1171,
+      "sha256": "6bbb645cee8292c0c11ef0bdceeb863c83230194d20671daa722412a9d475e5c"
+    },
+    {
+      "path": "REM_Tools/rem_auto_label.py",
+      "category": "source_code",
+      "size_bytes": 10356,
+      "sha256": "9c1521826d8317041b0f6eb14c13af567f61f3739a100996402ee2929710736c"
+    },
+    {
+      "path": "REM_Tools/requirements.txt",
+      "category": "config",
+      "size_bytes": 21,
+      "sha256": "798ea8038e1e6f8b28c24a5f05d5776125ca304fe47884fa5e76dd6121ff69e6"
+    },
+    {
+      "path": "REM_Tools/test_extraction.json",
+      "category": "dataset_or_features",
+      "size_bytes": 1027,
+      "sha256": "c03bf907b997736be0027c11facfe4c596a453735705a63e53b7ddfb24506403"
+    },
+    {
+      "path": "REM_Unified_Pipeline/README.md",
+      "category": "documentation_or_log",
+      "size_bytes": 2265,
+      "sha256": "2521a65d5ed8731ca3edf9e49d5f347e2b336047e6097f965afdc8af4d34c454"
+    },
+    {
+      "path": "REM_Unified_Pipeline/rem_pipeline.py",
+      "category": "source_code",
+      "size_bytes": 13588,
+      "sha256": "9698099b13f874451bd15ee722222c5ac86b125a3f6c2e89ebeded33dad5e58f"
+    },
+    {
+      "path": "REM_Unified_Pipeline/requirements.txt",
+      "category": "config",
+      "size_bytes": 73,
+      "sha256": "bfc798584195d5028daae1b9857c850487d26d700de10a6fd4b455bb91839412"
+    }
+  ],
+  "warnings": [
+    "Skipped hashing sensitive-looking file: REM_Autonomous_Dev_Agent/.env.example"
+  ],
+  "limitations": [
+    "Inventory only; code and model behavior have not been executed.",
+    "File hashes do not prove safety or correctness.",
+    "Dataset labels and train/test leakage require separate validation."
+  ]
+}

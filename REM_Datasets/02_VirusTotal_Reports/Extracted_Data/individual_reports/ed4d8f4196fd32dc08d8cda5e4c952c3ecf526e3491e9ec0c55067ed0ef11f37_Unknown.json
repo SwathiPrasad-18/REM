@@ -1,0 +1,45 @@
+{
+    "source_file": "ed4d8f4196fd32dc08d8cda5e4c952c3ecf526e3491e9ec0c55067ed0ef11f37.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\ed4d8f4196fd32dc08d8cda5e4c952c3ecf526e3491e9ec0c55067ed0ef11f37.html",
+    "report_sha256": "51bd19da56fe2e2b0d0d9c6f096da56e60fa422ca11f220a52b99bed8b7148c9",
+    "sample_sha256": "ed4d8f4196fd32dc08d8cda5e4c952c3ecf526e3491e9ec0c55067ed0ef11f37",
+    "sample_sha1": null,
+    "sample_md5": null,
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "CTF.LBES.MutexDefaultS",
+            "CTF.Compart.MutexDefaultS",
+            "CTF.Asm.MutexDefaultS",
+            "CTF.Layouts.MutexDefaultS",
+            "CTF.TMD.MutexDefaultS",
+            "CTF.TimListCache.FMPDefaultS",
+            "MUTEX.DefaultS",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [],
+    "capa_capabilities": [
+        "process",
+        "file",
+        "create"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:43.384638"
+}

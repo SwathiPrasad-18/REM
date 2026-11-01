@@ -1,0 +1,21 @@
+{
+  "experiment": "REM simulated three-client FedAvg LSTM",
+  "seed": 42,
+  "clients": 3,
+  "rounds": 20,
+  "local_epochs": 1,
+  "batch_size": 32,
+  "training_samples": 1035,
+  "validation_samples": 239,
+  "test_evaluated": false,
+  "threshold_for_reported_metrics": 0.5,
+  "vocabulary_size": 289,
+  "partition_strategy": "deterministic label-stratified sequence groups",
+  "aggregation": "sample-weighted FedAvg",
+  "best_validation_pr_auc_round": 17,
+  "best_validation_pr_auc": 0.8947704269691424,
+  "best_validation_f1_at_0_5_round": 17,
+  "best_validation_f1_at_0_5": 0.8059701492537313,
+  "final_model": "REM_Experiments\\Federated_Learning\\extended_rounds\\rounds_20\\artifacts\\fedavg_lstm_final.keras",
+  "note": "Simulated federated learning on one machine; clients are not independent organizations. Validation metrics are for development. The test set remains reserved. The final checkpoint is the last round; select a checkpoint using validation results only."
+}

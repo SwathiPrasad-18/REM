@@ -1,0 +1,27 @@
+{
+  "threshold": 0.5,
+  "n_samples": 207,
+  "accuracy": 0.9468599033816425,
+  "roc_auc": 0.9859410430839002,
+  "average_precision": 0.9746579268999788,
+  "malware_precision": 0.9016393442622951,
+  "malware_recall": 0.9166666666666666,
+  "malware_f1": 0.9090909090909091,
+  "tn": 141,
+  "fp": 6,
+  "fn": 5,
+  "tp": 55,
+  "confusion_matrix": [
+    [
+      141,
+      6
+    ],
+    [
+      5,
+      55
+    ]
+  ],
+  "outer_fold": 3,
+  "outer_train_samples": 828,
+  "outer_test_samples": 207
+}

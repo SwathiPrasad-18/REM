@@ -1,0 +1,76 @@
+{
+    "source_file": "ca3b993769e2cf1cbddb2131d61911c6af2c6b015e73c42569a686db0de4fa37.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\ca3b993769e2cf1cbddb2131d61911c6af2c6b015e73c42569a686db0de4fa37.html",
+    "report_sha256": "3e23967e2a0258d56ed52f8cc7336d7ce7bcdcba1e767cb435ef82741836b3ee",
+    "sample_sha256": "ca3b993769e2cf1cbddb2131d61911c6af2c6b015e73c42569a686db0de4fa37",
+    "sample_sha1": null,
+    "sample_md5": "043912c143bd6bc1a55fcd1acf8e368c",
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [
+        "twapi-be29e7f1-71ae-4703-50cb-1d52be512f51.dll"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [
+            "1.0.0.0"
+        ],
+        "domains": [
+            "BR2.tmp",
+            "BR3.tmp",
+            "BR4.tmp",
+            "BR5.tmp",
+            "twapi-be29e7f1-71ae-4703-50cb-1d52be512f51.dll",
+            "BR6.tmp",
+            "BR7.tmp",
+            "BR8.tmp",
+            "BR9.tmp",
+            "BRA.tmp",
+            "BRB.tmp",
+            "BRC.tmp",
+            "BRD.tmp",
+            "BRE.tmp",
+            "BRF.tmp",
+            "BR10.tmp",
+            "BR11.tmp",
+            "CTF.LBES.MutexDefaultS",
+            "CTF.Compart.MutexDefaultS",
+            "CTF.Asm.MutexDefaultS",
+            "CTF.Layouts.MutexDefaultS",
+            "CTF.TMD.MutexDefaultS",
+            "CTF.TimListCache.FMPDefaultS",
+            "MUTEX.DefaultS",
+            "MSCTF.Shared.MUTEX.EBH",
+            "996E.dat",
+            "CTF.ThreadMIConnectionEvent",
+            "CTF.ThreadMarshalInterfaceEvent",
+            "MSCTF.SendReceiveConection.Event.EBH.IC",
+            "MSCTF.SendReceive.Event.EBH.IC",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "registry",
+        "file",
+        "create",
+        "delete"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:43.034213"
+}

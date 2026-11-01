@@ -1,0 +1,114 @@
+{
+    "source_file": "19d619d9e62f58c60b6ddbcd019616c8d886ffb7f307c3b2acf22f4a9d221501.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\19d619d9e62f58c60b6ddbcd019616c8d886ffb7f307c3b2acf22f4a9d221501.html",
+    "report_sha256": "6f5c55e7ee3f3385eb0fa023e6cc1a2837282b57bd7964398c9d5a7fefe343d1",
+    "sample_sha256": null,
+    "sample_sha1": null,
+    "sample_md5": null,
+    "filename": "CAPE Sandbox",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [
+        "CAPE"
+    ],
+    "processes": [
+        "program.exe"
+    ],
+    "commands": [],
+    "registry": [
+        "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session",
+        "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Session"
+    ],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [
+            "deleted\\s+files?"
+        ],
+        "created": [],
+        "dropped": [
+            "dropped\\s+files?"
+        ]
+    },
+    "network": {
+        "ip_addresses": [
+            "20.59.87.226",
+            "40.126.27.128",
+            "40.119.249.228",
+            "23.45.1.85",
+            "23.60.131.209",
+            "23.215.11.155",
+            "204.79.197.203",
+            "8.8.8.8",
+            "131.107.255.255",
+            "23.51.25.137",
+            "20.190.155.130",
+            "20.190.155.132",
+            "20.190.155.65",
+            "20.190.155.131",
+            "20.190.155.3",
+            "20.190.155.1",
+            "20.190.155.2",
+            "172.16.1.1",
+            "172.16.1.255"
+        ],
+        "domains": [
+            "dns.msftncsi.com",
+            "wpad.hostonly",
+            "api.msn.com",
+            "api-msn-com.a-0003.a-msedge.net",
+            "a-0003.a-msedge.net",
+            "api-msn-com-oneservice-world-default.trafficmanager.net",
+            "ctldl.windowsupdate.com",
+            "download.windowsupdate.com.edgesuite.net",
+            "a767.dspw65.akamai.net",
+            "wu-b-net.trafficmanager.net",
+            "ctldl.windowsupdate.com.delivery.microsoft.com",
+            "ocsp.digicert.com",
+            "e3913.cd.akamaiedge.net",
+            "cac-ocsp.digicert.com.edgekey.net",
+            "ocsp.edge.digicert.com",
+            "cdn.onenote.net",
+            "e1553.dspg.akamaiedge.net",
+            "cdn.onenote.net.edgekey.net",
+            "settings-win.data.microsoft.com",
+            "atm-settingsfe-prod-geo2.trafficmanager.net",
+            "settings-prod-sea-2.southeastasia.cloudapp.azure.com",
+            "login.live.com",
+            "login.msa.msidentity.com",
+            "www.tm.lg.prod.aadmsa.akadns.net",
+            "www.tm.v4.a.prd.aadg.trafficmanager.net",
+            "prdv4a.aadg.msidentity.com",
+            "WORKGROUP.hostonly",
+            "client.wns.windows.com",
+            "wns.notify.trafficmanager.net",
+            "disallowedcertstl.cab",
+            "program.exe"
+        ],
+        "urls": [
+            "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?e3d6963ee2572ad4",
+            "http://ocsp.digicert.com/MFEwTzBNMEswSTAJBgUrDgMCGgUABBQ50otx%2Fh0Ztl%2Bz8SiPI7wEWVxDlQQUTiJUIBiV5uNu5g%2F6%2BrkS7QYXjzkCEApDqVCbATUviZV57HIIulA%3D",
+            "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?2b785327cb31417a",
+            "http://ocsp.digicert.com/MFEwTzBNMEswSTAJBgUrDgMCGgUABBSAUQYBMq2awn1Rh6Doh%2FsBYgFV7gQUA95QNVbRTLtm8KPiGxvDl7I90VUCEAJ0LqoXyo4hxxe7H%2Fz9DKA%3D"
+        ]
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "network",
+        "download",
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "registry",
+        "file",
+        "execute",
+        "command",
+        "download",
+        "create",
+        "delete"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.571123"
+}

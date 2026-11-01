@@ -1,0 +1,13 @@
+{
+  "generated_at_utc": "2026-10-27T15:41:44.090060+00:00",
+  "input_feedback_rows": 1,
+  "approved_rows": 0,
+  "rejected_rows": 1,
+  "excluded_sample_ids": [
+    "REM-SELFTEST-001"
+  ],
+  "approved_output_created": false,
+  "approved_output_path": null,
+  "rejection_report_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Experiments\\Self_Learning\\reports\\training_gate_rejections.csv",
+  "warning": "This gate checks record consistency and file integrity only. It does not authenticate reviewers or prove that labels are correct. Passing records must still undergo human evidence adjudication."
+}

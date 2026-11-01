@@ -1,0 +1,55 @@
+{
+    "source_file": "d6c0043a17091c535f895b79ca8094649b83d915315a18c249daed4de6529b0a.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\d6c0043a17091c535f895b79ca8094649b83d915315a18c249daed4de6529b0a.html",
+    "report_sha256": "835039d90ef6d4dc282515677ad6f25c1d4ab6bad69eb6d52514204c352ee593",
+    "sample_sha256": "d6c0043a17091c535f895b79ca8094649b83d915315a18c249daed4de6529b0a",
+    "sample_sha1": "a05ebf58dafc5d6b39e197847f67069be59d54f1",
+    "sample_md5": "c8801966a6e72f73c0700b78e2d94861",
+    "filename": "YBDict.EXE",
+    "file_type": "PE32 executable (GUI) Intel 80386, for MS Windows",
+    "file_size": "68.0 KB",
+    "sandboxes": [
+        "Zenbox"
+    ],
+    "processes": [
+        "YBDict.EXE"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "YBDict.EXE",
+            "www.yadabyte.com"
+        ],
+        "urls": [
+            "http://www.yadabyte.com/"
+        ]
+    },
+    "mitre_techniques": [
+        "T1497",
+        "T1082",
+        "T1114"
+    ],
+    "behavior_tags": [
+        "idle",
+        "evasion",
+        "network"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "file",
+        "memory",
+        "create"
+    ],
+    "verdict": "2 /100 Non Malicious",
+    "extraction_timestamp": "2026-09-30T16:07:43.312922"
+}

@@ -1,0 +1,27 @@
+{
+  "input": "Raw_Reports.zip",
+  "html_reports_found": 40,
+  "reports_parsed": 40,
+  "parse_errors": 0,
+  "formats": {
+    "CAPE/Cuckoo": 12,
+    "Tencent HABO": 22,
+    "VirusTotal HTML wrapper": 6
+  },
+  "reports_with_sha256": 40,
+  "reports_with_filename": 9,
+  "reports_with_behavior_events": 33,
+  "reports_with_network_ips": 20,
+  "reports_with_domains": 22,
+  "reports_with_urls": 14,
+  "reports_with_signatures": 11,
+  "reports_with_mitre": 7,
+  "total_behavior_events": 840,
+  "critical_limitations": [
+    "No ground-truth labels assigned.",
+    "Report verdicts remain separate from ground truth.",
+    "Runtime API call sequences are not inferred; this report set does not expose a consistently structured API-event trace to this parser.",
+    "IP/domain/URL regex extraction can include benign sandbox infrastructure or text mentions; treat as indicators for review, not confirmed malicious C2.",
+    "Behavior extraction is report-format dependent and requires manual spot-checking before model training."
+  ]
+}

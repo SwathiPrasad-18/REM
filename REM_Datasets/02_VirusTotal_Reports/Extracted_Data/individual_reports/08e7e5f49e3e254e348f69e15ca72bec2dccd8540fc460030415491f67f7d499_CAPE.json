@@ -1,0 +1,132 @@
+{
+    "source_file": "08e7e5f49e3e254e348f69e15ca72bec2dccd8540fc460030415491f67f7d499.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\08e7e5f49e3e254e348f69e15ca72bec2dccd8540fc460030415491f67f7d499.html",
+    "report_sha256": "0f46b5fb050b5c8fa365bc1d7c5c6649a8f5a5d9183d8cc501323762dfb67400",
+    "sample_sha256": "08e7e5f49e3e254e348f69e15ca72bec2dccd8540fc460030415491f67f7d499",
+    "sample_sha1": "ff04529c75b30d47a3c87532bc80839789b10d29",
+    "sample_md5": "0caaca912fd84d8451d6cec78dcb0d13",
+    "filename": "CAPE Sandbox",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [
+        "CAPE"
+    ],
+    "processes": [
+        "qwinsta.exe",
+        "UTILDLL.dll"
+    ],
+    "commands": [],
+    "registry": [
+        "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Nls\\CustomLocale",
+        "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Nls\\CustomLocale\\en-US",
+        "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Nls\\ExtendedLocale",
+        "HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Nls\\ExtendedLocale\\en-US",
+        "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\StateSeparation\\RedirectionMap\\Keys",
+        "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\LanguageOverlay\\OverlayPackages\\en-US",
+        "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows"
+    ],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [
+            "deleted\\s+files?"
+        ],
+        "created": [],
+        "dropped": [
+            "dropped\\s+files?"
+        ]
+    },
+    "network": {
+        "ip_addresses": [
+            "13.64.180.106",
+            "204.79.197.203",
+            "23.50.34.78",
+            "20.190.155.67",
+            "23.44.18.98",
+            "13.95.31.18",
+            "208.111.177.128",
+            "23.215.15.192",
+            "40.119.249.228",
+            "13.107.246.38",
+            "23.215.15.202",
+            "23.215.15.132",
+            "208.111.177.0",
+            "20.190.155.131",
+            "20.190.155.1",
+            "40.126.27.66",
+            "20.190.155.16",
+            "20.190.155.3",
+            "20.190.155.66",
+            "20.190.155.2",
+            "172.16.1.1"
+        ],
+        "domains": [
+            "qwinsta.exe",
+            "settings-win.data.microsoft.com",
+            "settings-prod-sea-2.southeastasia.cloudapp.azure.com",
+            "atm-settingsfe-prod-geo2.trafficmanager.net",
+            "maps.windows.com",
+            "maps-win-com-cdn.azureedge.net",
+            "s-part-0010.t-0009.t-msedge.net",
+            "maps-win-com-cdn.afd.azureedge.net",
+            "shed.dual-low.s-part-0010.t-0009.t-msedge.net",
+            "azureedge-t-prod.trafficmanager.net",
+            "www.msftconnecttest.com",
+            "www.msftncsi.com.edgesuite.net",
+            "ncsi-geo.trafficmanager.net",
+            "a1961.g2.akamai.net",
+            "wpad.hostonly",
+            "ctldl.windowsupdate.com",
+            "ctldl.windowsupdate.com.delivery.microsoft.com",
+            "wu-b-net.trafficmanager.net",
+            "windowsupdatebg.s.llnwi.net",
+            "fe3cr.delivery.mp.microsoft.com",
+            "glb.cws.prod.dcat.dsp.trafficmanager.net",
+            "fe3.delivery.mp.microsoft.com",
+            "fs.microsoft.com",
+            "fs-wildcard.microsoft.com.edgekey.net.globalredir.akadns.net",
+            "fs-wildcard.microsoft.com.edgekey.net",
+            "prod.fs.microsoft.com.akadns.net",
+            "e16604.g.akamaiedge.net",
+            "login.live.com",
+            "www.tm.lg.prod.aadmsa.trafficmanager.net",
+            "prdv4a.aadg.msidentity.com",
+            "login.msa.msidentity.com",
+            "www.tm.v4.a.prd.aadg.trafficmanager.net",
+            "cdn.onenote.net",
+            "e1553.dspg.akamaiedge.net",
+            "cdn.onenote.net.edgekey.net",
+            "api.msn.com",
+            "a-0003.a-msedge.net",
+            "api-msn-com.a-0003.a-msedge.net",
+            "client.wns.windows.com",
+            "wns.notify.trafficmanager.net",
+            "connecttest.txt",
+            "disallowedcertstl.cab",
+            "UTILDLL.dll.mui"
+        ],
+        "urls": [
+            "http://www.msftconnecttest.com/connecttest.txt",
+            "http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?dab65b49b1311f90"
+        ]
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "network",
+        "download",
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "registry",
+        "file",
+        "execute",
+        "command",
+        "download",
+        "create",
+        "delete"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.505386"
+}

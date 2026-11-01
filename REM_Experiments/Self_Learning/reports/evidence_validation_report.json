@@ -1,0 +1,39 @@
+{
+  "generated_at_utc": "2026-10-27T16:21:06.221790+00:00",
+  "registry_rows": 2,
+  "integrity_valid_records": 1,
+  "integrity_invalid_records": 1,
+  "metadata_valid_records": 2,
+  "training_eligible_records": 0,
+  "results": [
+    {
+      "sample_id": "REM-EVIDENCE-TEST-001",
+      "integrity_valid": false,
+      "integrity_reasons": "sha256_mismatch",
+      "metadata_valid": true,
+      "metadata_reasons": "",
+      "excluded_from_training": false,
+      "training_eligible": false,
+      "reviewer": "test-reviewer",
+      "verified_label": "1",
+      "evidence_file": "REM_EVIDENCE_TEST.txt",
+      "expected_sha256": "32917bc845d799551ed8901d2464878382fb1ffd452922294e57c02210f6b1c7",
+      "actual_sha256": "020842ebeb9fcc75f472fb6b61a1efc548566769779d07d4f3703917a707c12d"
+    },
+    {
+      "sample_id": "REM-EVIDENCE-VALID-TEST-001",
+      "integrity_valid": true,
+      "integrity_reasons": "",
+      "metadata_valid": true,
+      "metadata_reasons": "",
+      "excluded_from_training": true,
+      "training_eligible": false,
+      "reviewer": "test-reviewer",
+      "verified_label": "1",
+      "evidence_file": "REM_EVIDENCE_VALIDATION_TEST.txt",
+      "expected_sha256": "cd8250ca23e83778f6b6572ce8b8b324a8eb6330c4415860b87c8b263d17ddf5",
+      "actual_sha256": "cd8250ca23e83778f6b6572ce8b8b324a8eb6330c4415860b87c8b263d17ddf5"
+    }
+  ],
+  "warning": "Matching hashes confirm file integrity against the registry, not evidence authenticity, reviewer identity, or label correctness. Training eligibility additionally requires valid metadata and absence from the exclusion list."
+}

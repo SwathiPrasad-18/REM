@@ -1,0 +1,5 @@
+model,average_precision
+Random Forest,0.9584433625005665
+LSTM,0.9468119448145671
+Isolation Forest,0.4463321686335711
+REM Hybrid,0.9673152995555936

@@ -1,0 +1,48 @@
+{
+    "source_file": "b6e22a56772b91bea1c01852795cc6ddb88f1d9e094dc8b6463995adf0c24a2b.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\b6e22a56772b91bea1c01852795cc6ddb88f1d9e094dc8b6463995adf0c24a2b.html",
+    "report_sha256": "1dfec7670b34ded70931ecda183d7761bcf6e23655bf91b3ae6d2bb5d3ef1780",
+    "sample_sha256": "b6e22a56772b91bea1c01852795cc6ddb88f1d9e094dc8b6463995adf0c24a2b",
+    "sample_sha1": "aab18655aea5a43ae2387b72424049b9ec27567f",
+    "sample_md5": "db8ed9104d6dcb78d3d78ec3e44c1309",
+    "filename": "xwizard.exe",
+    "file_type": "PE32 executable (GUI) Intel 80386, for MS Windows",
+    "file_size": "40.5 KB",
+    "sandboxes": [
+        "Zenbox"
+    ],
+    "processes": [
+        "xwizard.exe"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "xwizard.exe"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [
+        "T1056",
+        "T1082"
+    ],
+    "behavior_tags": [
+        "idle",
+        "evasion"
+    ],
+    "capa_capabilities": [
+        "process",
+        "file",
+        "create"
+    ],
+    "verdict": "0 /100 Non Malicious",
+    "extraction_timestamp": "2026-09-30T16:07:43.002817"
+}

@@ -1,0 +1,25 @@
+﻿{
+    "generated_at_utc":  "2026-10-27T16:49:49.4261013Z",
+    "registry_rows":  1,
+    "integrity_valid_records":  1,
+    "integrity_invalid_records":  0,
+    "metadata_valid_records":  1,
+    "training_eligible_records":  0,
+    "results":  [
+                    {
+                        "sample_id":  "REM-ISOLATED-TEST-001",
+                        "integrity_valid":  true,
+                        "integrity_reasons":  "",
+                        "metadata_valid":  true,
+                        "metadata_reasons":  "",
+                        "excluded_from_training":  true,
+                        "training_eligible":  false,
+                        "reviewer":  "isolated-test-reviewer",
+                        "verified_label":  "1",
+                        "evidence_file":  "SYNTHETIC_GATE_TEST.txt",
+                        "expected_sha256":  "ebea75d9270cb2638e14387a34bd0b9265fa82f188646a7629de088d307a1c5e",
+                        "actual_sha256":  "ebea75d9270cb2638e14387a34bd0b9265fa82f188646a7629de088d307a1c5e"
+                    }
+                ],
+    "warning":  "Synthetic isolated test only. No record may be used for model training."
+}

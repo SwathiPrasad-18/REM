@@ -1,0 +1,271 @@
+{
+  "label_mapping": {
+    "0": "benign",
+    "1": "malicious"
+  },
+  "rows_used": 2543,
+  "feature_count": 58,
+  "features_used": [
+    "event_count__Access_CPU_clock_directly",
+    "event_count__Add_item_to_schedule_task",
+    "event_count__CAPE_behavior_summary",
+    "event_count__Call_Sleep_function",
+    "event_count__Connect_to_host",
+    "event_count__Copy_file",
+    "event_count__Create_event",
+    "event_count__Create_executable_file",
+    "event_count__Create_file",
+    "event_count__Create_local_thread",
+    "event_count__Create_mutex",
+    "event_count__Create_process",
+    "event_count__Create_process_of_additional_file",
+    "event_count__Create_process_without_showing_window",
+    "event_count__Delete_registry_item",
+    "event_count__Delete_registry_key",
+    "event_count__Detect_VM_environment_via_file_searching",
+    "event_count__Detect_debug_environment",
+    "event_count__Directly_call_the_system_key_API",
+    "event_count__File_remove",
+    "event_count__File_rename",
+    "event_count__Find_base_address_of_Kernel32_dll",
+    "event_count__Find_file",
+    "event_count__Find_specific_window",
+    "event_count__Find_window_of_common_anti_virus_software",
+    "event_count__Get_TickCount_value",
+    "event_count__Get_host_address_by_name",
+    "event_count__Hide_specific_window",
+    "event_count__Kill_process",
+    "event_count__Load_addtional_file",
+    "event_count__Modify_additional_executable_file",
+    "event_count__Modify_existing_executable_file",
+    "event_count__Modify_file",
+    "event_count__Modify_process_token_privilege",
+    "event_count__Modify_registry",
+    "event_count__Modify_registry_of_startup",
+    "event_count__Modify_registry_of_trusted_process_of_firewall",
+    "event_count__Open_Http_connection",
+    "event_count__Open_Http_request",
+    "event_count__Open_event",
+    "event_count__Open_mutex",
+    "event_count__Overwrite_existing_file",
+    "event_count__Search_suspect_process_name",
+    "event_count__Self_delete",
+    "event_count__Send_Http_request",
+    "event_count__Set_special_directory_property",
+    "event_count__Set_special_file_property",
+    "event_count__Set_thread_context",
+    "event_count__Signature_of_executable_file",
+    "event_count__Signature_of_modified_executable_file",
+    "event_count__Start_service",
+    "event_count__Window_information",
+    "event_count__Write_data_over_remote_process",
+    "event_count__HOST",
+    "event_count__",
+    "event_count__.1",
+    "event_count__.2",
+    "behavior_event_total"
+  ],
+  "split_method": "GroupShuffleSplit grouped by SHA-256",
+  "split_sizes": {
+    "train": 1652,
+    "validation": 382,
+    "test": 509
+  },
+  "sha256_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "metrics": [
+    {
+      "split": "train",
+      "rows": 1652,
+      "class_counts": {
+        "0": 838,
+        "1": 814
+      },
+      "accuracy": 0.5151331719128329,
+      "precision_recall_f1_support": {
+        "0": {
+          "name": "benign",
+          "precision": 0.511287370347773,
+          "recall": 1.0,
+          "f1": 0.6766249495357287,
+          "support": 838
+        },
+        "1": {
+          "name": "malicious",
+          "precision": 1.0,
+          "recall": 0.01597051597051597,
+          "f1": 0.03143893591293833,
+          "support": 814
+        }
+      },
+      "confusion_matrix_labels_0_1": [
+        [
+          838,
+          0
+        ],
+        [
+          801,
+          13
+        ]
+      ],
+      "classification_report": {
+        "benign_0": {
+          "precision": 0.511287370347773,
+          "recall": 1.0,
+          "f1-score": 0.6766249495357287,
+          "support": 838.0
+        },
+        "malicious_1": {
+          "precision": 1.0,
+          "recall": 0.01597051597051597,
+          "f1-score": 0.03143893591293833,
+          "support": 814.0
+        },
+        "accuracy": 0.5151331719128329,
+        "macro avg": {
+          "precision": 0.7556436851738866,
+          "recall": 0.507985257985258,
+          "f1-score": 0.3540319427243335,
+          "support": 1652.0
+        },
+        "weighted avg": {
+          "precision": 0.7520937144984466,
+          "recall": 0.5151331719128329,
+          "f1-score": 0.35871852393708986,
+          "support": 1652.0
+        }
+      },
+      "roc_auc": 0.5097466472764802
+    },
+    {
+      "split": "validation",
+      "rows": 382,
+      "class_counts": {
+        "0": 191,
+        "1": 191
+      },
+      "accuracy": 0.5104712041884817,
+      "precision_recall_f1_support": {
+        "0": {
+          "name": "benign",
+          "precision": 0.5052910052910053,
+          "recall": 1.0,
+          "f1": 0.671353251318102,
+          "support": 191
+        },
+        "1": {
+          "name": "malicious",
+          "precision": 1.0,
+          "recall": 0.020942408376963352,
+          "f1": 0.041025641025641026,
+          "support": 191
+        }
+      },
+      "confusion_matrix_labels_0_1": [
+        [
+          191,
+          0
+        ],
+        [
+          187,
+          4
+        ]
+      ],
+      "classification_report": {
+        "benign_0": {
+          "precision": 0.5052910052910053,
+          "recall": 1.0,
+          "f1-score": 0.671353251318102,
+          "support": 191.0
+        },
+        "malicious_1": {
+          "precision": 1.0,
+          "recall": 0.020942408376963352,
+          "f1-score": 0.041025641025641026,
+          "support": 191.0
+        },
+        "accuracy": 0.5104712041884817,
+        "macro avg": {
+          "precision": 0.7526455026455027,
+          "recall": 0.5104712041884817,
+          "f1-score": 0.3561894461718715,
+          "support": 382.0
+        },
+        "weighted avg": {
+          "precision": 0.7526455026455027,
+          "recall": 0.5104712041884817,
+          "f1-score": 0.3561894461718715,
+          "support": 382.0
+        }
+      },
+      "roc_auc": 0.5104712041884817
+    },
+    {
+      "split": "test",
+      "rows": 509,
+      "class_counts": {
+        "0": 247,
+        "1": 262
+      },
+      "accuracy": 0.48526522593320237,
+      "precision_recall_f1_support": {
+        "0": {
+          "name": "benign",
+          "precision": 0.48514851485148514,
+          "recall": 0.9919028340080972,
+          "f1": 0.651595744680851,
+          "support": 247
+        },
+        "1": {
+          "name": "malicious",
+          "precision": 0.5,
+          "recall": 0.007633587786259542,
+          "f1": 0.015037593984962405,
+          "support": 262
+        }
+      },
+      "confusion_matrix_labels_0_1": [
+        [
+          245,
+          2
+        ],
+        [
+          260,
+          2
+        ]
+      ],
+      "classification_report": {
+        "benign_0": {
+          "precision": 0.48514851485148514,
+          "recall": 0.9919028340080972,
+          "f1-score": 0.651595744680851,
+          "support": 247.0
+        },
+        "malicious_1": {
+          "precision": 0.5,
+          "recall": 0.007633587786259542,
+          "f1-score": 0.015037593984962405,
+          "support": 262.0
+        },
+        "accuracy": 0.48526522593320237,
+        "macro avg": {
+          "precision": 0.49257425742574257,
+          "recall": 0.4997682108971784,
+          "f1-score": 0.3333166693329067,
+          "support": 509.0
+        },
+        "weighted avg": {
+          "precision": 0.4927930907039623,
+          "recall": 0.48526522593320237,
+          "f1-score": 0.32393712880202424,
+          "support": 509.0
+        }
+      },
+      "roc_auc": 0.49979911611088784
+    }
+  ],
+  "caution": "SHA-256 grouping prevents exact-hash leakage, but source/dataset leakage and highly correlated features still need review. Inspect feature importance before interpreting generalization."
+}

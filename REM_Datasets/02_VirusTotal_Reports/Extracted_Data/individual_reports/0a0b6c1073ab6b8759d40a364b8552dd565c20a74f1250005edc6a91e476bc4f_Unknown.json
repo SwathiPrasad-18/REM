@@ -1,0 +1,73 @@
+{
+    "source_file": "0a0b6c1073ab6b8759d40a364b8552dd565c20a74f1250005edc6a91e476bc4f.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\0a0b6c1073ab6b8759d40a364b8552dd565c20a74f1250005edc6a91e476bc4f.html",
+    "report_sha256": "63e027eb910d06bf9191cae84a26e238089daf1c561b6b459064afeea2a6c03e",
+    "sample_sha256": "0a0b6c1073ab6b8759d40a364b8552dd565c20a74f1250005edc6a91e476bc4f",
+    "sample_sha1": null,
+    "sample_md5": "1a68c94f6b2d747e70c9a8624a5cb482",
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [
+        "IEXPLORE.EXE",
+        "Kndlkjcf.exe",
+        "Jhalqm32.dll"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "www.diablo2oo2.cjb.net",
+            "IEXPLORE.EXE",
+            "Kndlkjcf.exe",
+            "mehfgeog.htm",
+            "kobhgljj.htm",
+            "jlhegfpn.htm",
+            "infnmahq.htm",
+            "hpdgbmpc.htm",
+            "fhaimedh.htm",
+            "eccjhaec.htm",
+            "dpighklg.htm",
+            "cbgpmgci.htm",
+            "aommmaim.htm",
+            "qakfbmap.htm",
+            "opjcmhkc.htm",
+            "glgikbgn.htm",
+            "bankpepq.htm",
+            "makbpfgd.htm",
+            "Jhalqm32.dll",
+            "CTF.LBES.MutexDefaultS",
+            "CTF.Compart.MutexDefaultS",
+            "CTF.Asm.MutexDefaultS",
+            "CTF.Layouts.MutexDefaultS",
+            "CTF.TMD.MutexDefaultS",
+            "CTF.TimListCache.FMPDefaultS",
+            "MUTEX.DefaultS",
+            "MSFT.VSA.COM.DISABLE",
+            "MSFT.VSA.IEC.STATUS",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "registry",
+        "file",
+        "create"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.522310"
+}

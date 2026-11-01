@@ -1,0 +1,13 @@
+{
+  "input_reports": 40,
+  "reports_with_matching_html": 40,
+  "unique_sha256": 40,
+  "labels": {
+    "unknown": 40
+  },
+  "verification_status": {
+    "pending": 40
+  },
+  "api_enabled": false,
+  "note": "Automated labels are provisional. Unknown is safer than an unsupported benign/malicious label."
+}

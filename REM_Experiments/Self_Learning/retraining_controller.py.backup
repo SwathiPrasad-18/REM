@@ -1,0 +1,155 @@
+﻿import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+REPORT_DIR = BASE_DIR / "reports"
+
+APPROVED_PATH = DATA_DIR / "approved_training_feedback.csv"
+EXCLUSIONS_PATH = DATA_DIR / "training_exclusions.csv"
+REPORT_PATH = REPORT_DIR / "retraining_decision.json"
+
+MIN_APPROVED_RECORDS = 50
+REQUIRED_LABELS = {0, 1}
+
+
+def utc_now():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def main():
+    reasons = []
+    approved_count = 0
+    label_counts = {"0": 0, "1": 0}
+
+    if not APPROVED_PATH.exists():
+        reasons.append("approved_training_feedback.csv does not exist")
+        feedback = pd.DataFrame()
+    else:
+        feedback = pd.read_csv(
+            APPROVED_PATH,
+            dtype={"sample_id": str},
+        )
+
+    if feedback.empty:
+        reasons.append("No approved feedback records are available")
+    else:
+        required_columns = {
+            "sample_id",
+            "verified_label",
+            "review_status",
+            "eligible_for_training",
+            "evidence_reference",
+        }
+        missing = required_columns - set(feedback.columns)
+
+        if missing:
+            reasons.append(
+                "Missing required columns: " + ", ".join(sorted(missing))
+            )
+        else:
+            if feedback["sample_id"].isna().any():
+                reasons.append("Missing sample IDs detected")
+
+            if feedback["sample_id"].astype(str).duplicated().any():
+                reasons.append("Duplicate sample IDs detected")
+
+            labels = pd.to_numeric(
+                feedback["verified_label"], errors="coerce"
+            )
+
+            valid_labels = labels.isin([0, 1])
+            if not valid_labels.all():
+                reasons.append("Invalid or missing verified labels detected")
+
+            label_counts = {
+                "0": int((labels == 0).sum()),
+                "1": int((labels == 1).sum()),
+            }
+
+            if not feedback["review_status"].astype(str).str.lower().eq(
+                "verified"
+            ).all():
+                reasons.append("Unverified records detected")
+
+            eligible = feedback["eligible_for_training"].astype(
+                str
+            ).str.lower().isin(["true", "1", "yes"])
+
+            if not eligible.all():
+                reasons.append("Ineligible records detected")
+
+            evidence = feedback["evidence_reference"].astype(str).str.strip()
+            invalid_evidence = (
+                evidence.eq("")
+                | evidence.str.lower().eq("nan")
+                | evidence.str.upper().eq("SYNTHETIC-TEST-ONLY")
+            )
+            if invalid_evidence.any():
+                reasons.append("Missing or synthetic evidence detected")
+
+            if EXCLUSIONS_PATH.exists():
+                exclusions = pd.read_csv(
+                    EXCLUSIONS_PATH, dtype={"sample_id": str}
+                )
+                if "sample_id" in exclusions.columns:
+                    excluded_ids = set(
+                        exclusions["sample_id"].dropna().astype(str)
+                    )
+                    if feedback["sample_id"].astype(str).isin(
+                        excluded_ids
+                    ).any():
+                        reasons.append("Excluded sample IDs detected")
+                else:
+                    reasons.append(
+                        "Exclusion file has no sample_id column"
+                    )
+            else:
+                reasons.append("Training exclusion file is missing")
+
+            approved_count = len(feedback)
+
+            if approved_count < MIN_APPROVED_RECORDS:
+                reasons.append(
+                    f"Need at least {MIN_APPROVED_RECORDS} records; "
+                    f"found {approved_count}"
+                )
+
+            present_labels = {
+                label for label, count in label_counts.items() if count > 0
+            }
+            if present_labels != {"0", "1"}:
+                reasons.append(
+                    "Feedback must contain both benign (0) and malicious (1) labels"
+                )
+
+    ready = len(reasons) == 0
+
+    report = {
+        "generated_at_utc": utc_now(),
+        "status": "READY_FOR_REVIEW" if ready else "NOT_READY",
+        "training_launched": False,
+        "approved_record_count": approved_count,
+        "minimum_required_records": MIN_APPROVED_RECORDS,
+        "label_counts": label_counts,
+        "reasons": reasons,
+        "warning": (
+            "READY_FOR_REVIEW is not permission to train automatically. "
+            "Validate evidence authenticity, data provenance, split integrity, "
+            "and model-selection criteria before authorizing a run."
+        ),
+    }
+
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
+    REPORT_PATH.write_text(json.dumps(report, indent=2), encoding="utf-8")
+
+    print(json.dumps(report, indent=2))
+    print(f"\nDecision report saved to: {REPORT_PATH}")
+
+
+if __name__ == "__main__":
+    main()

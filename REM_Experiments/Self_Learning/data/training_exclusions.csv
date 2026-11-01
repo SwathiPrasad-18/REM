@@ -1,0 +1,3 @@
+﻿sample_id,reason
+REM-SELFTEST-001,Synthetic workflow test; exclude from model training
+"REM-EVIDENCE-VALID-TEST-001","Synthetic evidence integrity test; excluded from model training"

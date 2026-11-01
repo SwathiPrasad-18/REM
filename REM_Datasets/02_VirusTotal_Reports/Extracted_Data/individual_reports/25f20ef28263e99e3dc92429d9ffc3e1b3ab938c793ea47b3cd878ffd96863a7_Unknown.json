@@ -1,0 +1,60 @@
+{
+    "source_file": "25f20ef28263e99e3dc92429d9ffc3e1b3ab938c793ea47b3cd878ffd96863a7.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\25f20ef28263e99e3dc92429d9ffc3e1b3ab938c793ea47b3cd878ffd96863a7.html",
+    "report_sha256": "9eee677af7603b090026b07af5689b5da8a8acf642ae7bc9e9d87576ef1f6e9a",
+    "sample_sha256": "25f20ef28263e99e3dc92429d9ffc3e1b3ab938c793ea47b3cd878ffd96863a7",
+    "sample_sha1": null,
+    "sample_md5": null,
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [
+        "mscoreei.dll",
+        "MSVCR80.dll"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "Microsoft.NET",
+            "mscoreei.dll",
+            "MSVCR80.dll",
+            "mscorlib.INI",
+            "microsoftrootcert.crl",
+            "-31-2010.crl",
+            "CTF.LBES.MutexDefaultS",
+            "CTF.Compart.MutexDefaultS",
+            "CTF.Asm.MutexDefaultS",
+            "CTF.Layouts.MutexDefaultS",
+            "CTF.TMD.MutexDefaultS",
+            "CTF.TimListCache.FMPDefaultS",
+            "MUTEX.DefaultS",
+            "MSFT.VSA.COM.DISABLE",
+            "MSFT.VSA.IEC.STATUS",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "network"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "file",
+        "memory",
+        "create"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.666946"
+}

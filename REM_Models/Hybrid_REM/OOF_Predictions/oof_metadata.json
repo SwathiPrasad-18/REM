@@ -1,0 +1,15 @@
+{
+  "training_unique_sequences": 1035,
+  "folds": 5,
+  "conflicting_sequence_groups_excluded": 1,
+  "missing_rf_scores": 0,
+  "missing_if_scores": 0,
+  "fold_counts": {
+    "1": 207,
+    "2": 207,
+    "3": 207,
+    "4": 207,
+    "5": 207
+  },
+  "note": "RF and Isolation Forest scores are out-of-fold training predictions. LSTM OOF predictions have not yet been generated."
+}

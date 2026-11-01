@@ -1,0 +1,60 @@
+{
+    "source_file": "0cc4e8888237002ef7c738b9f7e14c6344487579ac8903c80d3c79dfec8bfef0.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\0cc4e8888237002ef7c738b9f7e14c6344487579ac8903c80d3c79dfec8bfef0.html",
+    "report_sha256": "fb0371760e1ff870c79ecf034750be85cf616cfde4438a3c6b2f24073747c9ca",
+    "sample_sha256": "0cc4e8888237002ef7c738b9f7e14c6344487579ac8903c80d3c79dfec8bfef0",
+    "sample_sha1": null,
+    "sample_md5": "e40bc00f335cdabd081db283deabd0f5",
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [
+        "jusched.exe",
+        "Kernel32.dll"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [
+            "6.0.150.3"
+        ],
+        "domains": [
+            "jusched.exe",
+            "Update23.job",
+            "Microsoft.Windows",
+            "CTF.LBES.MutexDefaultS",
+            "CTF.Compart.MutexDefaultS",
+            "CTF.Asm.MutexDefaultS",
+            "CTF.Layouts.MutexDefaultS",
+            "CTF.TMD.MutexDefaultS",
+            "CTF.TimListCache.FMPDefaultS",
+            "MUTEX.DefaultS",
+            "Kernel32.dll",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "network",
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "registry",
+        "file",
+        "create",
+        "delete"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.543615"
+}

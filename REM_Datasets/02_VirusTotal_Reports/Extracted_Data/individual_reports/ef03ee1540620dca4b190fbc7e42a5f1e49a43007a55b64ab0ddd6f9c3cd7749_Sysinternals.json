@@ -1,0 +1,84 @@
+{
+    "source_file": "ef03ee1540620dca4b190fbc7e42a5f1e49a43007a55b64ab0ddd6f9c3cd7749.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\ef03ee1540620dca4b190fbc7e42a5f1e49a43007a55b64ab0ddd6f9c3cd7749.html",
+    "report_sha256": "97948c7d76a89a0e9c42bfd5c780faa822a7a968dbe695070f6cc598ec74f3fe",
+    "sample_sha256": "ef03ee1540620dca4b190fbc7e42a5f1e49a43007a55b64ab0ddd6f9c3cd7749",
+    "sample_sha1": null,
+    "sample_md5": "30114a8be891f33f566a360adf26e2b4",
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [
+        "Sysinternals"
+    ],
+    "processes": [
+        "winsvc32.exe",
+        "1.exe",
+        "netsh.exe",
+        "Professional.exe",
+        "Crack.exe",
+        "Keygen.exe",
+        "Keymaker.exe",
+        "2009.exe",
+        "Collection.exe",
+        "Install.exe",
+        "CS3.exe",
+        "Extended.exe",
+        "Kernel32.dll"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "winsvc32.exe",
+            "www.sysinternals.com",
+            "1.exe",
+            "netsh.exe",
+            "Professional.exe",
+            "Crack.exe",
+            "Keygen.exe",
+            "Keymaker.exe",
+            "2009.exe",
+            "Collection.exe",
+            "Install.exe",
+            "CS3.exe",
+            "Extended.exe",
+            "Dc2.rar",
+            "tools.rar",
+            "CTF.LBES.MutexDefaultS",
+            "CTF.Compart.MutexDefaultS",
+            "CTF.Asm.MutexDefaultS",
+            "CTF.Layouts.MutexDefaultS",
+            "CTF.TMD.MutexDefaultS",
+            "CTF.TimListCache.FMPDefaultS",
+            "MUTEX.DefaultS",
+            "MSFT.VSA.COM.DISABLE",
+            "MSFT.VSA.IEC.STATUS",
+            "Kernel32.dll",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "network",
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "network",
+        "registry",
+        "file",
+        "create"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:43.432265"
+}

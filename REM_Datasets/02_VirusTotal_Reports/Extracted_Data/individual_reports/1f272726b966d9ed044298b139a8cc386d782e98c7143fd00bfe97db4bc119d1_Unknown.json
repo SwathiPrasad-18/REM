@@ -1,0 +1,74 @@
+{
+    "source_file": "1f272726b966d9ed044298b139a8cc386d782e98c7143fd00bfe97db4bc119d1.html",
+    "source_path": "C:\\Users\\Admin\\OneDrive\\Desktop\\REM_Project\\REM_Datasets\\02_VirusTotal_Reports\\Raw_Reports\\1f272726b966d9ed044298b139a8cc386d782e98c7143fd00bfe97db4bc119d1.html",
+    "report_sha256": "bb3e1265505ef6a380c1c98d855b257d6a7ef158113b45a5fd6e80a9a81a0edd",
+    "sample_sha256": "1f272726b966d9ed044298b139a8cc386d782e98c7143fd00bfe97db4bc119d1",
+    "sample_sha1": null,
+    "sample_md5": "7187ff269829ddd658af53e40f0d9091",
+    "filename": "Habo Analysis System",
+    "file_type": null,
+    "file_size": null,
+    "sandboxes": [],
+    "processes": [
+        "IEXPLORE.EXE",
+        "Molkbg32.exe",
+        "Nljlof32.dll"
+    ],
+    "commands": [],
+    "registry": [],
+    "file_activity": {
+        "opened": [],
+        "written": [],
+        "deleted": [],
+        "created": [],
+        "dropped": []
+    },
+    "network": {
+        "ip_addresses": [],
+        "domains": [
+            "IEXPLORE.EXE",
+            "Molkbg32.exe",
+            "bmnloakm.htm",
+            "dfnceqfp.htm",
+            "cdkjjeeh.htm",
+            "bbjokjdd.htm",
+            "gbjogjgb.htm",
+            "iliecgdo.htm",
+            "palnojam.htm",
+            "jcepgioi.htm",
+            "ccloepag.htm",
+            "mbpdklkm.htm",
+            "millekae.htm",
+            "qmclfben.htm",
+            "qfhdlcoe.htm",
+            "aefjlalp.htm",
+            "pmiebgdd.htm",
+            "Nljlof32.dll",
+            "zurfs.dat",
+            "hpnaldea.htm",
+            "CTF.LBES.MutexDefaultS",
+            "CTF.Compart.MutexDefaultS",
+            "CTF.Asm.MutexDefaultS",
+            "CTF.Layouts.MutexDefaultS",
+            "CTF.TMD.MutexDefaultS",
+            "CTF.TimListCache.FMPDefaultS",
+            "MUTEX.DefaultS",
+            "MSFT.VSA.COM.DISABLE",
+            "MSFT.VSA.IEC.STATUS",
+            "Tencent.All"
+        ],
+        "urls": []
+    },
+    "mitre_techniques": [],
+    "behavior_tags": [
+        "registry"
+    ],
+    "capa_capabilities": [
+        "process",
+        "registry",
+        "file",
+        "create"
+    ],
+    "verdict": null,
+    "extraction_timestamp": "2026-09-30T16:07:42.613107"
+}

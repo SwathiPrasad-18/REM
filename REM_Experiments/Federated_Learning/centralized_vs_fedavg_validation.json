@@ -1,0 +1,58 @@
+[
+  {
+    "model": "centralized_lstm",
+    "validation_samples": 239,
+    "roc_auc": 0.9254694835680751,
+    "pr_auc": 0.901017797722587,
+    "max_f1_operating_point": {
+      "threshold": 0.29,
+      "accuracy": 0.899581589958159,
+      "precision": 0.873015873015873,
+      "recall": 0.7746478873239436,
+      "f1": 0.8208955223880597,
+      "tn": 160.0,
+      "fp": 8.0,
+      "fn": 16.0,
+      "tp": 55.0
+    },
+    "recall_first_precision_at_least_0.80": {
+      "threshold": 0.24,
+      "accuracy": 0.8870292887029289,
+      "precision": 0.8142857142857143,
+      "recall": 0.8028169014084507,
+      "f1": 0.8085106382978723,
+      "tn": 155.0,
+      "fp": 13.0,
+      "fn": 14.0,
+      "tp": 57.0
+    }
+  },
+  {
+    "model": "federated_fedavg_lstm",
+    "validation_samples": 239,
+    "roc_auc": 0.868963782696177,
+    "pr_auc": 0.7594716541742692,
+    "max_f1_operating_point": {
+      "threshold": 0.28,
+      "accuracy": 0.8075313807531381,
+      "precision": 0.631578947368421,
+      "recall": 0.8450704225352113,
+      "f1": 0.7228915662650602,
+      "tn": 133.0,
+      "fp": 35.0,
+      "fn": 11.0,
+      "tp": 60.0
+    },
+    "recall_first_precision_at_least_0.80": {
+      "threshold": 0.53,
+      "accuracy": 0.8200836820083682,
+      "precision": 0.8181818181818182,
+      "recall": 0.5070422535211268,
+      "f1": 0.6260869565217392,
+      "tn": 160.0,
+      "fp": 8.0,
+      "fn": 35.0,
+      "tp": 36.0
+    }
+  }
+]
